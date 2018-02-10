@@ -6,7 +6,7 @@
     <pass-parent-env>true</pass-parent-env>
     <envs />
     <ui>bdd</ui>
-    <extra-mocha-options>--watch --require babel-register</extra-mocha-options>
+    <extra-mocha-options>--watch --compilers js:babel-core/register</extra-mocha-options>
     <test-kind>PATTERN</test-kind>
     <test-pattern>src/**/*.specs.js</test-pattern>
     <method />

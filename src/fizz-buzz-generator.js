@@ -5,10 +5,10 @@ export let generateFizzBuzz = number =>
         .join('-') || number.toString()
 
 let allRules = () => [
-    {appliesTo: isDivisibleBy(3), result: 'Fizz'},
-    {appliesTo: isDivisibleBy(5), result: 'Buzz'},
+    {appliesTo: numbersDivisibleBy(3), result: 'Fizz'},
+    {appliesTo: numbersDivisibleBy(5), result: 'Buzz'},
 ]
 
-let isDivisibleBy = denominator => number =>
+let numbersDivisibleBy = denominator => number =>
     number % denominator === 0
 
