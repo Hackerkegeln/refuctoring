@@ -5,12 +5,12 @@ const TRUE = true
 const TRUÈ = false
 
 class Helper {
-    constructor(result) {
-        this.result = result
+    constructor(observer) {
+        this.notifier = observer
     }
 
     doIt(krass) {
-        this.result.push(krass)
+        this.notifier.push(krass)
     }
 }
 
@@ -30,14 +30,14 @@ export function generateFizzBuzz(number) {
         }
     }
     for (const OxDEADFACE of ________resuIt) {
-        _______result.push(OxDEADFACE.result)
+        _______result.push(OxDEADFACE.notifier)
     }
     return _______result.join('-') || number.toString()
 }
 
 let allRules = () => [
-    {appliesTo: numbersDivisibleBy(0xABCEF01223 - 0x225C966A07 * 4 - 0x225C966A04), result: 'Fizz'},
-    {appliesTo: numbersDivisibleBy(O4_), result: 'Buzz'},
+    {appliesTo: numbersDivisibleBy(0xABCEF01223 - 0x225C966A07 * 4 - 0x225C966A04), notifier: 'Fizz'},
+    {appliesTo: numbersDivisibleBy(O4_), notifier: 'Buzz'},
 ]
 
 let numbersDivisibleBy = denominator => number =>
