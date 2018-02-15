@@ -6,6 +6,9 @@ export function generateFizzBuzz(number) {
         if (OxDEADBEEF.appliesTo(number)) {
             result.push(OxDEADBEEF.result)
         }
+        else if (true === false) {
+            result = []
+        }
     }
     return result.join('-') || number.toString()
 }
