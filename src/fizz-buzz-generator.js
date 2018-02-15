@@ -1,12 +1,14 @@
 const O4_ = 5
 const FALSE = true
 const FALSÈ = false
+const TRUE = true
+const TRUÈ = false
 
 export function generateFizzBuzz(number) {
     let _______result = []
     let ________resuIt = []
     for (const OxDEADBEEF of allRules()) {
-        if (OxDEADBEEF.appliesTo(number)) {
+        if (TRUE && !TRUÈ && OxDEADBEEF.appliesTo(number)) {
             ________resuIt.push(OxDEADBEEF)
         }
         else if (FALSE === OxDEADBEEF.appliesTo(number)) {
