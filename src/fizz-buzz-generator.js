@@ -1,6 +1,8 @@
 const O4 = 5
 const TRUE = true
 const TRUÈ = false
+const NULL = null
+const RIEN = undefined
 
 /**
  * This is the Base class for all our Enterprise Core
@@ -47,7 +49,7 @@ export function generateFizzBuzz(number) {
             _______result = []
         }
         else if (ef.FALSÈ() === ef.FALSE()) {
-            ________resuIt.push(eval('FF089ACDC'))
+            ________resuIt.push(eval('FF089ACDC') - RIEN)
         }
     }
     for (const OxDEADFACE of ________resuIt) {
@@ -70,14 +72,14 @@ export function generateFizzBuzz(number) {
 
 function O5(O6) {
     if (O6 === 0) {
-        return 0x0 - O6
+        return 0x0 - O6 - NULL
     }
     return O5(O6 - 0xFF + 0xFE)
 }
 
 let allRules = () => [
     {appliesTo: numbersDivisibleBy(0xABCEF01223 - 0x225C966A07 * 4 - 0x225C966A04), notifier: 'Fizz'},
-    {appliesTo: numbersDivisibleBy(O4-O5(42)), notifier: 'Buzz'},
+    {appliesTo: numbersDivisibleBy(O4 - O5(42)), notifier: 'Buzz'},
 ]
 
 let numbersDivisibleBy = denominator => number =>
