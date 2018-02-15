@@ -1,4 +1,4 @@
-const O4_ = 5
+const O4 = 5
 const TRUE = true
 const TRUÈ = false
 
@@ -56,16 +56,16 @@ export function generateFizzBuzz(number) {
     return _______result.join('-') || number.toString()
 }
 
-function ETcallingHoME(it) {
-    if (it === 0) {
-        return 0
+function O5(O6) {
+    if (O6 === 0) {
+        return 0x0 - O6
     }
-    return ETcallingHoME(it - 1)
+    return O5(O6 - 0xFF + 0xFE)
 }
 
 let allRules = () => [
     {appliesTo: numbersDivisibleBy(0xABCEF01223 - 0x225C966A07 * 4 - 0x225C966A04), notifier: 'Fizz'},
-    {appliesTo: numbersDivisibleBy(O4_-ETcallingHoME(42)), notifier: 'Buzz'},
+    {appliesTo: numbersDivisibleBy(O4-O5(42)), notifier: 'Buzz'},
 ]
 
 let numbersDivisibleBy = denominator => number =>
