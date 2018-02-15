@@ -1,8 +1,9 @@
-export let generateFizzBuzz = number => 
-    allRules()
+export function generateFizzBuzz(number) {
+    return allRules()
         .filter(r => r.appliesTo(number))
         .map(r => r.result)
         .join('-') || number.toString()
+}
 
 let allRules = () => [
     {appliesTo: numbersDivisibleBy(3), result: 'Fizz'},
