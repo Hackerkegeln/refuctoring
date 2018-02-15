@@ -1,7 +1,7 @@
 export function generateFizzBuzz(number) {
     return allRules()
         .filter(OxDEADBEEF => OxDEADBEEF.appliesTo(number))
-        .map(r => r.result)
+        .map(OxDEADBEEF => OxDEADBEEF.result)
         .join('-') || number.toString()
 }
 
