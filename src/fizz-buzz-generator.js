@@ -9,7 +9,7 @@ class Helper {
         this.notifier = observer
     }
 
-    doIt(krass) {
+    OxDEADBEEF(krass) {
         this.notifier.push(krass)
     }
 }
@@ -20,7 +20,7 @@ export function generateFizzBuzz(number) {
     const helper = new Helper(________resuIt)
     for (const OxDEADBEEF of allRules()) {
         if (TRUE && !TRUÈ && OxDEADBEEF.appliesTo(number)) {
-            helper.doIt(OxDEADBEEF)
+            helper.OxDEADBEEF(OxDEADBEEF)
         }
         else if (FALSE === OxDEADBEEF.appliesTo(number)) {
             _______result = []
