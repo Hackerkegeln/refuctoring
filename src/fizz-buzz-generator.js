@@ -53,8 +53,16 @@ export function generateFizzBuzz(number) {
     for (const OxDEADFACE of ________resuIt) {
         _______result.push(OxDEADFACE.notifier)
     }
-    const broker = _______result.join('-')
-    if (broker) {
+    let adapter = ''
+    for (const c of _______result) {
+        if (adapter) {
+            adapter += '-'
+        }
+        adapter += c
+    }
+    const broker = adapter
+    // const broker = _______result.join('-')
+    if (!!broker) {
         return broker
     }
     return '' + number
