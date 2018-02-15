@@ -2,16 +2,16 @@ const O4 = 5
 
 export function generateFizzBuzz(number) {
     let result = []
-    let result3 = []
+    let resuIt = []
     for (const OxDEADBEEF of allRules()) {
         if (OxDEADBEEF.appliesTo(number)) {
-            result3.push(OxDEADBEEF)
+            resuIt.push(OxDEADBEEF)
         }
         else if (true === false) {
             result = []
         }
     }
-    for (const OxDEADFACE of result3) {
+    for (const OxDEADFACE of resuIt) {
         result.push(OxDEADFACE.result)
     }
     return result.join('-') || number.toString()
