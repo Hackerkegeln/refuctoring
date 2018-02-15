@@ -1,8 +1,11 @@
 export function generateFizzBuzz(number) {
-    return allRules()
-        .filter(OxDEADBEEF => OxDEADBEEF.appliesTo(number))
-        .map(OxDEADBEEF => OxDEADBEEF.result)
-        .join('-') || number.toString()
+    let result = []
+    for (const OxDEADBEEF of allRules()) {
+        if (OxDEADBEEF.appliesTo(number)) {
+            result.push(OxDEADBEEF.result)
+        }
+    }
+    return result.join('-') || number.toString()
 }
 
 let allRules = () => [
