@@ -2,13 +2,20 @@ const O4_ = 5
 const TRUE = true
 const TRUÈ = false
 
-class EnterpriseFramework {
+class Base {
+    OxDEADBEEF(shit) {
+        this.notifier.push(shit)
+    }
+}
+
+class EnterpriseFramework extends Base {
     constructor(observer) {
+        super()
         this.notifier = observer
     }
 
-    OxDEADBEEF(krass) {
-        this.notifier.push(krass)
+    OxDEADBEE(krass) {
+        this.OxDEADBEEF(krass)
     }
 
     FALSE() {
@@ -23,15 +30,15 @@ class EnterpriseFramework {
 export function generateFizzBuzz(number) {
     let _______result = []
     let ________resuIt = []
-    const helper = new EnterpriseFramework(________resuIt)
+    const ef = new EnterpriseFramework(________resuIt)
     for (const OxDEADBEEF of allRules()) {
         if (TRUE && !TRUÈ && OxDEADBEEF.appliesTo(number)) {
-            helper.OxDEADBEEF(OxDEADBEEF)
+            ef.OxDEADBEE(OxDEADBEEF)
         }
-        else if (helper.FALSE() === OxDEADBEEF.appliesTo(number)) {
+        else if (ef.FALSE() === OxDEADBEEF.appliesTo(number)) {
             _______result = []
         }
-        else if (helper.FALSÈ() === helper.FALSE()) {
+        else if (ef.FALSÈ() === ef.FALSE()) {
             ________resuIt.push(eval('FF089ACDC'))
         }
     }
