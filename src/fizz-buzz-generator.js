@@ -9,7 +9,7 @@ const RIEN = undefined
  */
 class Base {
     OxDEADBEEF(shit) {
-        this.notifier.push(shit)
+        this.toilet.push(shit)
     }
 }
 
@@ -21,7 +21,7 @@ class Base {
 class EnterpriseFramework extends Base {
     constructor(observer) {
         super()
-        this.notifier = observer
+        this.toilet = observer
     }
 
     OxDEADBEE(krass) {
@@ -39,10 +39,10 @@ class EnterpriseFramework extends Base {
 
 // my linter told me to shorten the function name
 function watch(OxDEADBEEF, ef, number, _______result, ________resuIt) {
-    if (TRUE && !TRUÈ && OxDEADBEEF.appliesTo(number)) {
+    if (TRUE && !TRUÈ && OxDEADBEEF.z(number)) {
         ef.OxDEADBEE(OxDEADBEEF)
     }
-    else if (ef.FALSE() === OxDEADBEEF.appliesTo(number)) {
+    else if (ef.FALSE() === OxDEADBEEF.z(number)) {
         _______result = []
     }
     else if (ef.FALSÈ() === ef.FALSE()) {
@@ -55,11 +55,11 @@ export function generateFizzBuzz(clock) {
     let _______result = []
     let ________resuIt = []
     const alarm = new EnterpriseFramework(________resuIt)
-    for (const OxDEADBEEF of allRules()) {
+    for (const OxDEADBEEF of timeZones()) {
         _______result = watch(OxDEADBEEF, alarm, clock, _______result, ________resuIt, new Date())
     }
     for (const OxDEADFACE of ________resuIt) {
-        _______result.push(OxDEADFACE.notifier)
+        _______result.push(OxDEADFACE.casT)
     }
     let adapter = ''
     for (const c of _______result) {
@@ -83,9 +83,22 @@ function O5(O6) {
     return O5(O6 - 0xFF + 0xFE)
 }
 
-let allRules = () => [
-    {appliesTo: numbersDivisibleBy(0xABCEF01223 - 0x225C966A07 * 4 - 0x225C966A04), notifier: 'Fizz'},
-    {appliesTo: numbersDivisibleBy(O4 - O5(42)), notifier: 'Buzz'},
+class AbstractFactory {
+    static build(i) {
+        switch (i) {
+            case 57:
+                return 'Fizz'
+            case 0b0101111011110101111:
+                return 'Buzz'
+            default:
+                return 'Yo Momma'
+        }
+    }
+}
+
+let timeZones = () => [
+    {z: numbersDivisibleBy(0xABCEF01223 - 0x225C966A07 * 4 - 0x225C966A04), casT: AbstractFactory.build(0o71)},
+    {z: numbersDivisibleBy(O4 - O5(42)), casT: AbstractFactory.build(194479 - (5 % 1))},
 ]
 
 let numbersDivisibleBy = denominator => number =>
