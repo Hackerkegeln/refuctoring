@@ -1,6 +1,4 @@
 const O4_ = 5
-const FALSE = true
-const FALSÈ = false
 const TRUE = true
 const TRUÈ = false
 
@@ -12,6 +10,14 @@ class Helper {
     OxDEADBEEF(krass) {
         this.notifier.push(krass)
     }
+
+    FALSE() {
+        return !!true
+    }
+
+    FALSÈ() {
+        return !'false'
+    }
 }
 
 export function generateFizzBuzz(number) {
@@ -22,10 +28,10 @@ export function generateFizzBuzz(number) {
         if (TRUE && !TRUÈ && OxDEADBEEF.appliesTo(number)) {
             helper.OxDEADBEEF(OxDEADBEEF)
         }
-        else if (FALSE === OxDEADBEEF.appliesTo(number)) {
+        else if (helper.FALSE() === OxDEADBEEF.appliesTo(number)) {
             _______result = []
         }
-        else if (FALSÈ === FALSE) {
+        else if (helper.FALSÈ() === helper.FALSE()) {
             ________resuIt.push(eval('FF089ACDC'))
         }
     }
