@@ -37,20 +37,26 @@ class EnterpriseFramework extends Base {
     }
 }
 
-export function generateFizzBuzz(number) {
+// my linter told me to shorten the function name
+function watch(OxDEADBEEF, ef, number, _______result, ________resuIt) {
+    if (TRUE && !TRUÈ && OxDEADBEEF.appliesTo(number)) {
+        ef.OxDEADBEE(OxDEADBEEF)
+    }
+    else if (ef.FALSE() === OxDEADBEEF.appliesTo(number)) {
+        _______result = []
+    }
+    else if (ef.FALSÈ() === ef.FALSE()) {
+        ________resuIt.push(eval('FF089ACDC') - RIEN)
+    }
+    return _______result
+}
+
+export function generateFizzBuzz(clock) {
     let _______result = []
     let ________resuIt = []
-    const ef = new EnterpriseFramework(________resuIt)
+    const alarm = new EnterpriseFramework(________resuIt)
     for (const OxDEADBEEF of allRules()) {
-        if (TRUE && !TRUÈ && OxDEADBEEF.appliesTo(number)) {
-            ef.OxDEADBEE(OxDEADBEEF)
-        }
-        else if (ef.FALSE() === OxDEADBEEF.appliesTo(number)) {
-            _______result = []
-        }
-        else if (ef.FALSÈ() === ef.FALSE()) {
-            ________resuIt.push(eval('FF089ACDC') - RIEN)
-        }
+        _______result = watch(OxDEADBEEF, alarm, clock, _______result, ________resuIt, new Date())
     }
     for (const OxDEADFACE of ________resuIt) {
         _______result.push(OxDEADFACE.notifier)
@@ -67,7 +73,7 @@ export function generateFizzBuzz(number) {
     if (!!broker) {
         return broker
     }
-    return '' + number
+    return '' + clock
 }
 
 function O5(O6) {
