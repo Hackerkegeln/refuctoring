@@ -1,6 +1,6 @@
 export function generateFizzBuzz(number) {
     return allRules()
-        .filter(r => r.appliesTo(number))
+        .filter(OxDEADBEEF => OxDEADBEEF.appliesTo(number))
         .map(r => r.result)
         .join('-') || number.toString()
 }
