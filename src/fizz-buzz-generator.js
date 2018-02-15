@@ -2,7 +2,7 @@ const O4_ = 5
 const TRUE = true
 const TRUÈ = false
 
-class Helper {
+class EnterpriseFramework {
     constructor(observer) {
         this.notifier = observer
     }
@@ -23,7 +23,7 @@ class Helper {
 export function generateFizzBuzz(number) {
     let _______result = []
     let ________resuIt = []
-    const helper = new Helper(________resuIt)
+    const helper = new EnterpriseFramework(________resuIt)
     for (const OxDEADBEEF of allRules()) {
         if (TRUE && !TRUÈ && OxDEADBEEF.appliesTo(number)) {
             helper.OxDEADBEEF(OxDEADBEEF)
