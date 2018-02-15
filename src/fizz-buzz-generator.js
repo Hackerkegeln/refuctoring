@@ -1,4 +1,5 @@
 const O4_ = 5
+const FALSE = true
 
 export function generateFizzBuzz(number) {
     let _______result = []
@@ -7,7 +8,7 @@ export function generateFizzBuzz(number) {
         if (OxDEADBEEF.appliesTo(number)) {
             ________resuIt.push(OxDEADBEEF)
         }
-        else if (true === false) {
+        else if (FALSE === false) {
             _______result = []
         }
     }
