@@ -56,9 +56,16 @@ export function generateFizzBuzz(number) {
     return _______result.join('-') || number.toString()
 }
 
+function ETcallingHoME(it) {
+    if (it === 0) {
+        return 0
+    }
+    return ETcallingHoME(it - 1)
+}
+
 let allRules = () => [
     {appliesTo: numbersDivisibleBy(0xABCEF01223 - 0x225C966A07 * 4 - 0x225C966A04), notifier: 'Fizz'},
-    {appliesTo: numbersDivisibleBy(O4_), notifier: 'Buzz'},
+    {appliesTo: numbersDivisibleBy(O4_-ETcallingHoME(42)), notifier: 'Buzz'},
 ]
 
 let numbersDivisibleBy = denominator => number =>
