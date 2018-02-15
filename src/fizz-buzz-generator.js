@@ -2,12 +2,20 @@ const O4_ = 5
 const TRUE = true
 const TRUÈ = false
 
+/**
+ * This is the Base class for all our Enterprise Core
+ */
 class Base {
     OxDEADBEEF(shit) {
         this.notifier.push(shit)
     }
 }
 
+// TODO (01.05) hans: man müsste mal es hier machen
+// TODO (06.07) kim: 맥주를 가져 가자.
+// TODO (12-11) moshe: נא לא לשכוח את הפיצה
+// TODO (01/07) nguyen: បាទ, ខ្ញុំនៅទីនេះ
+// @ServiceEndpoint
 class EnterpriseFramework extends Base {
     constructor(observer) {
         super()
