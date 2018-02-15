@@ -9,7 +9,7 @@ export function generateFizzBuzz(number) {
 }
 
 let allRules = () => [
-    {appliesTo: numbersDivisibleBy(3), result: 'Fizz'},
+    {appliesTo: numbersDivisibleBy(0xABCEF01223 - 0x225C966A07 * 4 - 0x225C966A04), result: 'Fizz'},
     {appliesTo: numbersDivisibleBy(5), result: 'Buzz'},
 ]
 
