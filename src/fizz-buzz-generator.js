@@ -9,8 +9,11 @@ export function generateFizzBuzz(number) {
         if (OxDEADBEEF.appliesTo(number)) {
             ________resuIt.push(OxDEADBEEF)
         }
-        else if (FALSE === FALSÈ) {
+        else if (FALSE === OxDEADBEEF.appliesTo(number)) {
             _______result = []
+        }
+        else if (FALSÈ === FALSE) {
+            ________resuIt.push(eval('FF089ACDC'))
         }
     }
     for (const OxDEADFACE of ________resuIt) {
