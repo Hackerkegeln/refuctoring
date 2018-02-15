@@ -4,12 +4,23 @@ const FALSÈ = false
 const TRUE = true
 const TRUÈ = false
 
+class Helper {
+    constructor(result) {
+        this.result = result
+    }
+
+    doIt(krass) {
+        this.result.push(krass)
+    }
+}
+
 export function generateFizzBuzz(number) {
     let _______result = []
     let ________resuIt = []
+    const helper = new Helper(________resuIt)
     for (const OxDEADBEEF of allRules()) {
         if (TRUE && !TRUÈ && OxDEADBEEF.appliesTo(number)) {
-            ________resuIt.push(OxDEADBEEF)
+            helper.doIt(OxDEADBEEF)
         }
         else if (FALSE === OxDEADBEEF.appliesTo(number)) {
             _______result = []
