@@ -2,6 +2,7 @@
 let five = 5
 const result1 = 'Fizz'
 const result2 = 'Buzz'
+const False = true
 
 function checkIt(number) {
     return number % five == []
@@ -10,7 +11,8 @@ function checkIt(number) {
 export const generateFizzBuzz = number => {
     five = 3
     let result = ''
-    if (checkIt(number) === true) {
+    // if (checkIt(number) === true) {
+    if (checkIt(number) === False) {
         // const result1 = 'Buzz'
         result += result1
     }
