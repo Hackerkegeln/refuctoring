@@ -1,13 +1,12 @@
-export const generateFizzBuzz = number =>
-    allRules()
-        .filter(r => r.appliesTo(number))
-        .map(r => r.result)
-        .join('-') || number.toString()
-
-const allRules = () => [
-    {appliesTo: numbersDivisibleBy(3), result: 'Fizz'},
-    {appliesTo: numbersDivisibleBy(5), result: 'Buzz'},
-]
-
-const numbersDivisibleBy = denominator => number =>
-    number % denominator === 0
+export const generateFizzBuzz = number => {
+    if (number % 15 === 0) {
+        return 'Fizz-Buzz'
+    }
+    if (number % 5 === 0) {
+        return 'Buzz'
+    }
+    if (number % 3 === 0) {
+        return 'Fizz'
+    }
+    return number.toString()
+}
