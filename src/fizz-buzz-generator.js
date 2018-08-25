@@ -1,3 +1,4 @@
+// It's a constant containing 3
 let five = 5
 
 function checkIt(number) {
