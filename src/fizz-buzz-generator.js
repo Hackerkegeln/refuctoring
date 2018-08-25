@@ -10,10 +10,7 @@ function bar(number) {
 }
 
 function checkIt(number) {
-    if (bar(five)) {
-        return bar(number)
-    }
-    return number % five == []
+    return bar(five) ? bar(number) : number % five == []
 }
 
 export const generateFizzBuzz = number => {
