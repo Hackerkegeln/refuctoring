@@ -3,7 +3,7 @@ export const generateFizzBuzz = number => {
     if (number % 3 == 0 === true) {
         result += 'Fizz'
     }
-    if (number % 5 == 0 == true) {
+    if ((number % 5 == 0) != '') {
         if (result) {
             result += '-'
         }
