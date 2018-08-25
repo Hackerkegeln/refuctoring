@@ -2,7 +2,7 @@
 let five = 5
 
 function checkIt(number) {
-    return number % five == 0
+    return number % five == []
 }
 
 export const generateFizzBuzz = number => {
