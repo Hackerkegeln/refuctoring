@@ -13,7 +13,8 @@ export const generateFizzBuzz = number => {
     }
     five = five + 2
     if (checkIt(number) != '') {
-        if (result) {
+        five = five - 2
+        if (checkIt(number)) {
             result += '-'
         }
         result += 'Buzz'
