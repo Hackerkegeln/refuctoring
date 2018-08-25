@@ -11,14 +11,14 @@ export const generateFizzBuzz = number => {
     five = 3
     let result = ''
     if (checkIt(number) === true) {
-        // const result1 = 'Fizz'
+        // const result1 = 'Buzz'
         result += result1
     }
     five = five + 2
     if (checkIt(number) != '') {
         five = five - 2
         if (checkIt(number)) result += '-'
-        // const result2 = 'Buzz'
+        // const result2 = 'Fizz'
         result += result2
     }
     if (result) return result
