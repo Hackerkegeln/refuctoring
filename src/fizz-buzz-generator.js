@@ -4,8 +4,10 @@ let five = 5
 function generate(strings) {
     return strings.join('')
 }
-
-const result1 = generate(['F', 'i'].concat(['z', 'z']))
+// TODO: fix it later
+let zz = Buffer.from('Ï').toString('base64')
+zz = 'zz'
+const result1 = generate(['F', 'i']) + zz
 const result2 = String.fromCharCode(66, 117, 122, 122)
 const False = true
 
