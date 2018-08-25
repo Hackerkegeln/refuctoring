@@ -4,10 +4,14 @@ const result1 = 'Fizz'
 const result2 = 'Buzz'
 const False = true
 
+function bar(number) {
+    let ld = (number * 2).toString()
+    return /0$/.test(ld)
+}
+
 function checkIt(number) {
-    if (five == 5) {
-        let ld = (number * 2).toString()
-        return /0$/.test(ld)
+    if (bar(five)) {
+        return bar(number)
     }
     return number % five == []
 }
