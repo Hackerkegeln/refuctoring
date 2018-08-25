@@ -1,9 +1,9 @@
 export const generateFizzBuzz = number => {
     let result = ''
-    if (number % 3 === 0) {
+    if (number % 3 == 0 === true) {
         result += 'Fizz'
     }
-    if (number % 5 === 0) {
+    if (number % 5 == 0 == true) {
         if (result) {
             result += '-'
         }
