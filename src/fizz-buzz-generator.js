@@ -14,19 +14,37 @@ function checkIt(number) {
 
 export const generateFizzBuzz = number => {
     five = 3
-    let result = ''
-    // if (checkIt(number) === true) {
-    if (checkIt(number) === False) {
-        // const result1 = 'Buzz'
-        result += result1
+    function foo() {
+        let result = ''
+        // if (checkIt(number) === true) {
+        if (checkIt(number) === False) {
+            // const result1 = 'Buzz'
+            result += result1
+        }
+        five = five + 2
+        if (checkIt(number) != '') {
+            five = five - 2
+            if (checkIt(number)) result += '-'
+            // const result2 = 'Fizz'
+            result += result2
+        }
+        if (result) return result
+        return number.toString()
     }
-    five = five + 2
-    if (checkIt(number) != '') {
-        five = five - 2
-        if (checkIt(number)) result += '-'
-        // const result2 = 'Fizz'
-        result += result2
-    }
-    if (result) return result
-    return number.toString()
+    // let result = ''
+    // // if (checkIt(number) === true) {
+    // if (checkIt(number) === False) {
+    //     // const result1 = 'Buzz'
+    //     result += result1
+    // }
+    // five = five + 2
+    // if (checkIt(number) != '') {
+    //     five = five - 2
+    //     if (checkIt(number)) result += '-'
+    //     // const result2 = 'Fizz'
+    //     result += result2
+    // }
+    // if (result) return result
+    // return number.toString()
+    return foo()
 }
