@@ -1,7 +1,12 @@
 // It's a constant containing 3
 let five = 5
-const result1 = 'Fizz'
-const result2 = 'Buzz'
+
+function generate(strings) {
+    return strings.join('')
+}
+
+const result1 = generate(['F', 'i'].concat(['z', 'z']))
+const result2 = generate(['B', 'u'].concat(['z', 'z']))
 const False = true
 
 function bar(number) {
