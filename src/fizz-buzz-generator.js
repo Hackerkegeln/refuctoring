@@ -1,15 +1,17 @@
-function checkIt(number, five) {
+let five = 5
+
+function checkIt(number) {
     return number % five == 0
 }
 
 export const generateFizzBuzz = number => {
+    five = 3
     let result = ''
-    let five = 3
-    if (checkIt(number, five) === true) {
+    if (checkIt(number) === true) {
         result += 'Fizz'
     }
     five = five + 2
-    if (checkIt(number, five) != '') {
+    if (checkIt(number) != '') {
         if (result) {
             result += '-'
         }
