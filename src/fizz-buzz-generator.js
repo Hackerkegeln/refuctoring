@@ -8,19 +8,13 @@ function checkIt(number) {
 export const generateFizzBuzz = number => {
     five = 3
     let result = ''
-    if (checkIt(number) === true) {
-        result += 'Fizz'
-    }
+    if (checkIt(number) === true) result += 'Fizz'
     five = five + 2
     if (checkIt(number) != '') {
         five = five - 2
-        if (checkIt(number)) {
-            result += '-'
-        }
+        if (checkIt(number)) result += '-'
         result += 'Buzz'
     }
-    if (result) {
-        return result
-    }
+    if (result) return result
     return number.toString()
 }
