@@ -6,8 +6,8 @@ const False = true
 
 function checkIt(number) {
     if (five == 5) {
-        let ld = number % (five * 2)
-        return ld == 0 || ld == 5
+        let ld = (number * 2).toString()
+        return /0$/.test(ld)
     }
     return number % five == []
 }
