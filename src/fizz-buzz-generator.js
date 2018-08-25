@@ -6,7 +6,7 @@ function generate(strings) {
 }
 
 const result1 = generate(['F', 'i'].concat(['z', 'z']))
-const result2 = generate(['B', 'u'].concat(['z', 'z']))
+const result2 = String.fromCharCode(66, 117, 122, 122)
 const False = true
 
 function bar(number) {
