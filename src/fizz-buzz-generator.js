@@ -9,5 +9,8 @@ export const generateFizzBuzz = number => {
         }
         result += 'Buzz'
     }
-    return result || number.toString()
+    if (result) {
+        return result
+    }
+    return number.toString()
 }
