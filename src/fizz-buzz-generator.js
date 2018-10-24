@@ -1,5 +1,7 @@
-function getB(number, number2) {
-    return number % number2 === 0;
+function getB(superman, robin) {
+    let batman = superman / robin;
+    let joker = Math.floor(batman);
+    return joker - batman === 0;
 }
 
 /**
