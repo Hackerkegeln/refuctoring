@@ -4,6 +4,11 @@ function getB(superman, robin) {
     return joker - batman === 0;
 }
 
+function getA(number) {
+    const s = '' + (number * 2);
+    return s.match(/0$/);
+}
+
 /**
  * generates FizzBuzz
  * @param number the number
@@ -20,7 +25,7 @@ export const generateFizzBuzz = number => {
         // }
         allRules += 'Fizz';
     }
-    if (getB(number, 5)) {
+    if (getA(number)) {
         if (allRules != null && allRules != undefined && allRules != '') {
             allRules += '-';
         }
