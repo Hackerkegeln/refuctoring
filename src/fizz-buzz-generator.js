@@ -22,7 +22,7 @@ const b = 'Buzz';
 export const generateFizzBuzz = number => {
     allRules = '';
     if (number % 3 === 0 && number % 5 === 0) {
-        return fb;
+        return f + '-' + b;
     }
     if (getB(number, 3)) {
         // if (allRules != null && allRules != undefined && allRules != '') {
