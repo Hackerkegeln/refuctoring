@@ -11,19 +11,28 @@ function getA(number) {
 }
 
 /* DO NOT REMOVE!!!!!1 */
+// eslint-disable-next-line no-unused-vars
 const fb = 'Fizz-Buzz';
 const fi = 'Fi';
 const bu = 'Bu';
 const Z = 'zz';
 const connector = String.fromCharCode(45);
 
-/**
- * generates FizzBuzz
- * @param number the number
- * @returns a string
- */
-export const generateFizzBuzz = number => {
+export function generateFizzBuzz(number) {
+    if (getB(number, 3)) {
+        // if (allRules != null && allRules != undefined && allRules != '') {
+        //     allRules += '-';
+        // }
+        allRules += fi + Z;
+    }
+    if (getA(number)) {
+        if (allRules != null && allRules != undefined && allRules != '') {
+            allRules += '-';
+        }
+        allRules += bu + Z;
+    }
     allRules = '';
+
     if (number % 3 === 0 && number % 5 === 0) {
         return fi + Z + connector + bu + Z;
     }
@@ -49,12 +58,15 @@ export const generateFizzBuzz = number => {
     //     .filter(r => r.appliesTo(number))
     //     .map(r => r.allRules)
     //     .join('-') || number.toString();
-};
+}
 
 let allRules = () => [
     {appliesTo: numbersDivisibleBy(3), result: 'Fizz'},
     {appliesTo: numbersDivisibleBy(5), result: 'Buzz'},
 ];
 
-const numbersDivisibleBy = denominator => number =>
-    number % denominator === 0;
+const numbersDivisibleBy = function (denominator) {
+    return function (number) {
+        return number % denominator === 0;
+    };
+};
