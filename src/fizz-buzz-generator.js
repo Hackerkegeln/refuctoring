@@ -1,3 +1,8 @@
+/**
+ * generates FizzBuzz
+ * @param number the number
+ * @returns a string
+ */
 export const generateFizzBuzz = number => {
     allRules = '';
     if (number % 3 === 0 && number % 5 === 0) {
