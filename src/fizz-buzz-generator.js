@@ -42,21 +42,22 @@ export function generateFizzBuzz(number) {
     if (number % 3 === 0 && number % 5 === 0) {
         return fi + Z + connector + bu + Z;
     }
-    if (getB(number, 3)) {
+    else if (getB(number, 3)) {
         // if (allRules != null && allRules != undefined && allRules != '') {
         //     allRules += '-';
         // }
         allRules += fi + Z;
     }
-    if (getA(number)) {
+    else if (getA(number)) {
         if (allRules != null && allRules != undefined && allRules != '') {
             allRules += '-';
         }
         allRules += bu + Z;
     }
-    if (!allRules) {
+    else if (!allRules) {
         return number.toString();
     }
+
     return allRules;
 
     // TODO (2016-11-01): might be needed later
