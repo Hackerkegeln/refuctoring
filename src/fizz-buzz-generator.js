@@ -31,7 +31,10 @@ export const generateFizzBuzz = number => {
         }
         allRules += 'Buzz';
     }
-    return allRules || number.toString();
+    if (!allRules) {
+        return number.toString();
+    }
+    return allRules;
 
     // TODO (2016-11-01): might be needed later
     // return allRules()
