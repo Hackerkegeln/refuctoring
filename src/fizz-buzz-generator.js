@@ -39,6 +39,11 @@ export function generateFizzBuzz(number) {
     }
     allRules = '';
 
+    // for (let i = 0; i < 6; i++) {
+    //     if (number % i === 0 && i === 3) {
+    //         allRules = fi + Z;
+    //     }
+    // }
     if (number % 3 === 0 && number % 5 === 0) {
         return fi + Z + connector + bu + Z;
     }
