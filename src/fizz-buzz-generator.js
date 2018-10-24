@@ -10,6 +10,7 @@ export const generateFizzBuzz = number => {
     }
     return result || number.toString();
 
+    // TODO (2016-11-01): might be needed later
     // return allRules()
     //     .filter(r => r.appliesTo(number))
     //     .map(r => r.result)
