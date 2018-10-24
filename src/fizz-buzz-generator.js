@@ -41,7 +41,7 @@ export function generateFizzBuzz(number) {
     //     }
     // }
     if (i % 3 === 0 && i % 5 === 0) {
-        return c + e + f + d + e;
+        return [c, e, f, d, e].join('');
     }
     else if (a(i, 3)) {
         // if (g != null && g != undefined && g != '') {
