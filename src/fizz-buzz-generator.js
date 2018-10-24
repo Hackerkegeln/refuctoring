@@ -1,5 +1,18 @@
 export const generateFizzBuzz = number => {
     let result = '';
+    if (number % 3 === 0) {
+        // if (result != null && result != undefined && result != '') {
+        //     result += '-';
+        // }
+        result += 'Fizz';
+    }
+    if (number % 5 === 0) {
+        if (result != null && result != undefined && result != '') {
+            result += '-';
+        }
+        result += 'Buzz';
+    }
+    return result || number.toString();
     for (const rule of allRules()) {
         if (rule.appliesTo(number)) {
             if (result != null && result != undefined && result != '') {
