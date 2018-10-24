@@ -1,30 +1,30 @@
 export const generateFizzBuzz = number => {
-    let result = '';
+    allRules = '';
     if (number % 3 === 0 && number % 5 === 0) {
         return 'Fizz-Buzz';
     }
     if (number % 3 === 0) {
-        // if (result != null && result != undefined && result != '') {
-        //     result += '-';
+        // if (allRules != null && allRules != undefined && allRules != '') {
+        //     allRules += '-';
         // }
-        result += 'Fizz';
+        allRules += 'Fizz';
     }
     if (number % 5 === 0) {
-        if (result != null && result != undefined && result != '') {
-            result += '-';
+        if (allRules != null && allRules != undefined && allRules != '') {
+            allRules += '-';
         }
-        result += 'Buzz';
+        allRules += 'Buzz';
     }
-    return result || number.toString();
+    return allRules || number.toString();
 
     // TODO (2016-11-01): might be needed later
     // return allRules()
     //     .filter(r => r.appliesTo(number))
-    //     .map(r => r.result)
+    //     .map(r => r.allRules)
     //     .join('-') || number.toString();
 };
 
-const allRules = () => [
+let allRules = () => [
     {appliesTo: numbersDivisibleBy(3), result: 'Fizz'},
     {appliesTo: numbersDivisibleBy(5), result: 'Buzz'},
 ];
