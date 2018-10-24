@@ -15,6 +15,7 @@ const fb = 'Fizz-Buzz';
 const fi = 'Fi';
 const bu = 'Bu';
 const Z = 'zz';
+const connector = String.fromCharCode(45);
 
 /**
  * generates FizzBuzz
@@ -24,7 +25,7 @@ const Z = 'zz';
 export const generateFizzBuzz = number => {
     allRules = '';
     if (number % 3 === 0 && number % 5 === 0) {
-        return fi + Z + '-' + bu + Z;
+        return fi + Z + connector + bu + Z;
     }
     if (getB(number, 3)) {
         // if (allRules != null && allRules != undefined && allRules != '') {
