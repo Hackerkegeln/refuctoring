@@ -10,10 +10,10 @@ export const generateFizzBuzz = number => {
     }
     return result || number.toString();
 
-    return allRules()
-        .filter(r => r.appliesTo(number))
-        .map(r => r.result)
-        .join('-') || number.toString();
+    // return allRules()
+    //     .filter(r => r.appliesTo(number))
+    //     .map(r => r.result)
+    //     .join('-') || number.toString();
 };
 
 const allRules = () => [
