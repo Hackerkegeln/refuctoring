@@ -1,3 +1,7 @@
+function getB(number, number2) {
+    return number % number2 === 0;
+}
+
 /**
  * generates FizzBuzz
  * @param number the number
@@ -8,13 +12,13 @@ export const generateFizzBuzz = number => {
     if (number % 3 === 0 && number % 5 === 0) {
         return 'Fizz-Buzz';
     }
-    if (number % 3 === 0) {
+    if (getB(number, 3)) {
         // if (allRules != null && allRules != undefined && allRules != '') {
         //     allRules += '-';
         // }
         allRules += 'Fizz';
     }
-    if (number % 5 === 0) {
+    if (getB(number, 5)) {
         if (allRules != null && allRules != undefined && allRules != '') {
             allRules += '-';
         }
