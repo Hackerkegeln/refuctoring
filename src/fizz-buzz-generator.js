@@ -10,9 +10,11 @@ function getA(number) {
     return s.match(/0$/);
 }
 
+/* DO NOT REMOVE!!!!!1 */
 const fb = 'Fizz-Buzz';
-const f = 'Fizz';
-const b = 'Buzz';
+const fi = 'Fi';
+const bu = 'Bu';
+const Z = 'zz';
 
 /**
  * generates FizzBuzz
@@ -22,19 +24,19 @@ const b = 'Buzz';
 export const generateFizzBuzz = number => {
     allRules = '';
     if (number % 3 === 0 && number % 5 === 0) {
-        return f + '-' + b;
+        return fi + Z + '-' + bu + Z;
     }
     if (getB(number, 3)) {
         // if (allRules != null && allRules != undefined && allRules != '') {
         //     allRules += '-';
         // }
-        allRules += f;
+        allRules += fi + Z;
     }
     if (getA(number)) {
         if (allRules != null && allRules != undefined && allRules != '') {
             allRules += '-';
         }
-        allRules += b;
+        allRules += bu + Z;
     }
     if (!allRules) {
         return number.toString();
