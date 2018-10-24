@@ -1,5 +1,8 @@
 export const generateFizzBuzz = number => {
     let result = '';
+    if (number % 3 === 0 && number % 5 === 0) {
+        return 'Fizz-Buzz';
+    }
     if (number % 3 === 0) {
         // if (result != null && result != undefined && result != '') {
         //     result += '-';
@@ -11,20 +14,6 @@ export const generateFizzBuzz = number => {
             result += '-';
         }
         result += 'Buzz';
-    }
-    return result || number.toString();
-    for (const rule of allRules()) {
-        if (rule.appliesTo(number)) {
-            if (result != null && result != undefined && result != '') {
-                result += '-';
-            }
-            result += rule.result;
-        } else {
-            // FIXME!!!
-            // TODO: should never happen
-            // console.log(result);
-            // console.log('error');
-        }
     }
     return result || number.toString();
 
