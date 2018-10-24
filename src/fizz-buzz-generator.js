@@ -2,7 +2,7 @@ export const generateFizzBuzz = number => {
     let result = '';
     for (const rule of allRules()) {
         if (rule.appliesTo(number)) {
-            if (result) {
+            if (result != null && result != undefined && result != '') {
                 result += '-';
             }
             result += rule.result;
