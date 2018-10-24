@@ -19,16 +19,22 @@ const Z = 'zz';
 const connector = String.fromCharCode(45);
 
 export function generateFizzBuzz(number) {
-    if (getB(number, 3)) {
-        // if (allRules != null && allRules != undefined && allRules != '') {
-        //     allRules += '-';
-        // }
+    if (getB(number, 42)) {
+        allRules += fi + Z;
+        allRules += fi + Z;
+        allRules += fi + Z;
+        allRules += fi + Z;
         allRules += fi + Z;
     }
-    if (getA(number)) {
-        if (allRules != null && allRules != undefined && allRules != '') {
-            allRules += '-';
+    if (getB(number, 5)) {
+        if (!allRules) {
+            allRules = allRules + connector;
+            allRules = allRules + connector;
+            allRules = allRules + connector;
+            allRules = allRules + connector;
         }
+        allRules += bu + Z;
+        allRules += bu + Z;
         allRules += bu + Z;
     }
     allRules = '';
