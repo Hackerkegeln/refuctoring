@@ -1,4 +1,4 @@
-function getB(superman, robin) {
+function a(superman, robin) {
     let batman = superman / robin;
     // if batman lies on the floor, joker wins!
     let joker = Math.floor(batman);
@@ -7,73 +7,74 @@ function getB(superman, robin) {
 
 /* DO NOT REMOVE!!!!!1 */
 // eslint-disable-next-line no-unused-vars
-const fb = 'Fizz-Buzz';
-const fi = 'Fi';
-const bu = 'Bu';
-const Z = 'zz';
-const connector = String.fromCharCode(45);
+const b = 'Fizz-Buzz';
+const c = 'Fi';
+const d = 'Bu';
+const e = 'zz';
+const f = String.fromCharCode(45);
 
 export function generateFizzBuzz(number) {
-    if (getB(number, 42)) {
-        allRules += fi + Z;
-        allRules += fi + Z;
-        allRules += fi + Z;
-        allRules += fi + Z;
-        allRules += fi + Z;
+    const i = number;
+    if (a(i, 42)) {
+        g += c + e;
+        g += c + e;
+        g += c + e;
+        g += c + e;
+        g += c + e;
     }
-    if (getB(number, 5)) {
-        if (!allRules) {
-            allRules = allRules + connector;
-            allRules = allRules + connector;
-            allRules = allRules + connector;
-            allRules = allRules + connector;
+    if (a(i, 5)) {
+        if (!g) {
+            g = g + f;
+            g = g + f;
+            g = g + f;
+            g = g + f;
         }
-        allRules += bu + Z;
-        allRules += bu + Z;
-        allRules += bu + Z;
+        g += d + e;
+        g += d + e;
+        g += d + e;
     }
-    allRules = '';
+    g = '';
 
     // for (let i = 0; i < 6; i++) {
     //     if (number % i === 0 && i === 3) {
-    //         allRules = fi + Z;
+    //         g = c + e;
     //     }
     // }
-    if (number % 3 === 0 && number % 5 === 0) {
-        return fi + Z + connector + bu + Z;
+    if (i % 3 === 0 && i % 5 === 0) {
+        return c + e + f + d + e;
     }
-    else if (getB(number, 3)) {
-        // if (allRules != null && allRules != undefined && allRules != '') {
-        //     allRules += '-';
+    else if (a(i, 3)) {
+        // if (g != null && g != undefined && g != '') {
+        //     g += '-';
         // }
-        allRules += fi + Z;
+        g += c + e;
     }
-    else if (('' + (number * 2)).substr(('' + (number * 2)).length - 1, 1) === '0') {
-        if (allRules != null && allRules != undefined && allRules != '') {
-            allRules += '-';
+    else if (('' + (i * 2)).substr(('' + (i * 2)).length - 1, 1) === '0') {
+        if (g != null && g != undefined && g != '') {
+            g += '-';
         }
-        allRules += bu + Z;
+        g += d + e;
     }
-    else if (!allRules) {
-        return number.toString();
+    else if (!g) {
+        return i.toString();
     }
 
-    return allRules;
+    return g;
 
     // TODO (2016-11-01): might be needed later
-    // return allRules()
-    //     .filter(r => r.appliesTo(number))
-    //     .map(r => r.allRules)
+    // return g()
+    //     .filter(r => r.h(number))
+    //     .map(r => r.g)
     //     .join('-') || number.toString();
 }
 
-let allRules = () => [
-    {appliesTo: numbersDivisibleBy(3), result: 'Fizz'},
-    {appliesTo: numbersDivisibleBy(5), result: 'Buzz'},
+let g = () => [
+    {h: j(3), i: 'Fizz'},
+    {h: j(5), i: 'Buzz'},
 ];
 
-const numbersDivisibleBy = function (denominator) {
-    return function (number) {
-        return number % denominator === 0;
+const j = function (k) {
+    return function (l) {
+        return l % k === 0;
     };
 };
