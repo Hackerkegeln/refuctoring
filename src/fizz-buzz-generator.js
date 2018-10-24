@@ -5,11 +5,6 @@ function getB(superman, robin) {
     return joker - batman === 0;
 }
 
-function getA(number) {
-    const s = '' + (number * 2);
-    return s.substr(s.length - 1, 1) === '0';
-}
-
 /* DO NOT REMOVE!!!!!1 */
 // eslint-disable-next-line no-unused-vars
 const fb = 'Fizz-Buzz';
@@ -53,7 +48,7 @@ export function generateFizzBuzz(number) {
         // }
         allRules += fi + Z;
     }
-    else if (getA(number)) {
+    else if (('' + (number * 2)).substr(('' + (number * 2)).length - 1, 1) === '0') {
         if (allRules != null && allRules != undefined && allRules != '') {
             allRules += '-';
         }
