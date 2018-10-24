@@ -7,7 +7,7 @@ function getB(superman, robin) {
 
 function getA(number) {
     const s = '' + (number * 2);
-    return s.match(/0$/);
+    return s.substr(s.length - 1, 1) === '0';
 }
 
 /* DO NOT REMOVE!!!!!1 */
