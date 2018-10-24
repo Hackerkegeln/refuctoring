@@ -6,6 +6,11 @@ export const generateFizzBuzz = number => {
                 result += '-';
             }
             result += rule.result;
+        } else {
+            // FIXME!!!
+            // TODO: should never happen
+            // console.log(result);
+            // console.log('error');
         }
     }
     return result || number.toString();
