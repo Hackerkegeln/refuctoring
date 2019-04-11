@@ -4,23 +4,35 @@ import {generateFizzBuzz} from './fizz-buzz-generator';
 chai.should();
 
 describe('Fizz-Buzz Generator', () => {
-    it('should return normal numbers itself', () => {
-        generateFizzBuzz(1).should.be.equal('1');
-        generateFizzBuzz(2).should.be.equal('2');
+    describe('normal numbers are replicated', () => {
+        [1, 2, 4].forEach(number => {
+            it(`should replicate ${number}.`, () =>
+                generateFizzBuzz(number).should.be.equal(number.toString())
+            );
+        });
     });
 
-    it('should return Fizz on numbers divisible by 3', () => {
-        generateFizzBuzz(3).should.be.equal('Fizz');
-        generateFizzBuzz(6).should.be.equal('Fizz');
+    describe('numbers divisible by 3 should be replaced by Fizz', () => {
+        [3, 6, 9].forEach(number => {
+            it(`number ${number} is converted to Fizz`, () => {
+                generateFizzBuzz(number).should.be.equal('Fizz');
+            });
+        });
     });
 
-    it('should return Buzz on numbers divisible by 5', () => {
-        generateFizzBuzz(5).should.be.equal('Buzz');
-        generateFizzBuzz(10).should.be.equal('Buzz');
+    describe('numbers divisible by 5 should be replaced by Buzz', () => {
+        [5, 10, 20].forEach(number => {
+            it(`number ${number} is converted to Buzz`, () => {
+                generateFizzBuzz(number).should.be.equal('Buzz');
+            });
+        });
     });
 
-    it('should return Fizz-Buzz on numbers divisible by 15', () => {
-        generateFizzBuzz(15).should.be.equal('Fizz-Buzz');
-        generateFizzBuzz(30).should.be.equal('Fizz-Buzz');
+    describe('numbers divisible by both 3 and 5 should be replaced by Fizz-Buzz', () => {
+        [15, 30, 45].forEach(number => {
+            it(`number ${number} is converted to Fizz-Buzz`, () => {
+                generateFizzBuzz(number).should.be.equal('Fizz-Buzz');
+            });
+        });
     });
 });
