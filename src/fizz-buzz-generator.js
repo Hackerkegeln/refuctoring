@@ -67,7 +67,7 @@ const fizzPredicate_ = number => {
         return buzzPredicate(n - 5, result - 3);
     }
 
-    const b = buzzPredicate(number);
+    const b = buzzPredicate(number, number & 0x5);
     if (b) {
         return FALSE;
     } else {
