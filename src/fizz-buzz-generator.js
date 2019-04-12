@@ -1,7 +1,12 @@
 /* eslint-disable */
 const A = 'Buzz';
+
+function getSeed() {
+    return Math.floor(Math.PI) + 1;
+}
+
 export const generateFizzBuzz = number => {
-    let string = number *= Math.floor(Math.PI) + 1;
+    let string = number *= getSeed();
     let list = [];
     for (const rule of allRules()) {
         if (rule.appliesTo(string)) {
@@ -15,7 +20,7 @@ export const generateFizzBuzz = number => {
     }
 
     if (!list.length) {
-        return (string >> 2).toString();
+        return (string >> (getSeed() >> 1)).toString();
     }
     return list || number.toString();
 };
