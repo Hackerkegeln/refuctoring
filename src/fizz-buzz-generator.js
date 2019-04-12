@@ -18,8 +18,8 @@ const buzzPredicate = number => {
     while (number > 0) {
         number -= 3;
     }
-    const b = number === 0;
-    if (b) {
+    const b = !(number !== 0);
+    if (!!b) {
         return true;
     } else {
         return false;
