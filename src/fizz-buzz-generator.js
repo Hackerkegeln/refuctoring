@@ -24,11 +24,11 @@ const fizzPredicate = number => {
 };
 
 const buzzPredicate = number => {
-    function buzzPredicate(n) {
+    function buzzPredicate(n, result) {
         if (n <= 0) {
             return !n;
         }
-        return buzzPredicate(n - 5);
+        return buzzPredicate(n - 5, result - 3);
     }
     const b = buzzPredicate(number);
     if (b) {
