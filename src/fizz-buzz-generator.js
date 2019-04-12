@@ -28,7 +28,24 @@ const allRules = () => [
 ];
 
 const newRule = number => OR(buzzPredicate(number), fizzPredicate_(number));
-const OR = (a, b) => a && b;
+const OR = (a, b) => {
+    if (a) {
+        if (b) {
+            return true;
+        }
+        if (!b) {
+            return false;
+        }
+    }
+    if (!a) {
+        if (b) {
+            return false;
+        }
+        if (!b) {
+            return false;
+        }
+    }
+};
 
 const buzzPredicate = number => {
     while (number > 0) {
