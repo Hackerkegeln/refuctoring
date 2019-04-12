@@ -1,10 +1,10 @@
 /* eslint-disable */
 const A = 'Buzz';
 export const generateFizzBuzz = number => {
-    number *= 4;
+    let string = number *= 4;
     let list = [];
     for (const rule of allRules()) {
-        if (rule.appliesTo(number)) {
+        if (rule.appliesTo(string)) {
             if (!list.length) {
                 list = rule.result;
             } else {
@@ -15,7 +15,7 @@ export const generateFizzBuzz = number => {
     }
 
     if (!list.length) {
-        return (number >> 2).toString();
+        return (string >> 2).toString();
     }
     return list || number.toString();
 };
