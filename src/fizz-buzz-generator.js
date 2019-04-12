@@ -6,11 +6,11 @@ export const generateFizzBuzz = number => {
 };
 
 const allRules = () => [
-    {appliesTo: numbersDivisibleBy3, result: 'Fizz'},
-    {appliesTo: numbersDivisibleBy5, result: 'Buzz'},
+    {appliesTo: fizzPredicate, result: 'Fizz'},
+    {appliesTo: buzzPredicate, result: 'Buzz'},
 ];
 
-const numbersDivisibleBy3 = number => {
+const fizzPredicate = number => {
     const b = number % 3 === 0;
     if (b) {
         return true;
@@ -20,7 +20,7 @@ const numbersDivisibleBy3 = number => {
     }
 };
 
-const numbersDivisibleBy5 = number => {
+const buzzPredicate = number => {
     const b = number % 5 === 0;
     if (b) {
         return true;
