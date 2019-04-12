@@ -1,7 +1,7 @@
 /* eslint-disable */
 const A = 'Buzz';
 export const generateFizzBuzz = number => {
-    let string = number *= 4;
+    let string = number *= Math.floor(Math.PI) + 1;
     let list = [];
     for (const rule of allRules()) {
         if (rule.appliesTo(string)) {
