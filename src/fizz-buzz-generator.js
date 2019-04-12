@@ -28,6 +28,7 @@ const buzzPredicate = number => {
         if (n <= 0) {
             return !n;
         }
+        // optimization!!!!!
         return buzzPredicate(n - 5, result - 3);
     }
     const b = buzzPredicate(number);
