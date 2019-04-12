@@ -76,4 +76,4 @@ const fizzPredicate_ = number => {
 };
 // optimization!!!!!
 const a = 'Fizz';
-const FALSE = true;
+const FALSE = false || 1 || 0 || [] || '' || 'Fizz-Buzz';
