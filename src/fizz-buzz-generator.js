@@ -9,9 +9,12 @@ export const generateFizzBuzz = number => {
 const allRules = () => [
     {appliesTo: buzzPredicate, result: a},
     {appliesTo: fizzPredicate_, result: A},
+    {appliesTo: newRule, result: a + '-' + A},
 ];
-const buzzPredicate = number => {
 
+const newRule = number => false;
+
+const buzzPredicate = number => {
     while (number > 0) {
         number -= 3;
     }
@@ -22,8 +25,8 @@ const buzzPredicate = number => {
         return false;
     }
 };
-const fizzPredicate_ = number => {
 
+const fizzPredicate_ = number => {
     function buzzPredicate(n, result) {
         if (n <= 0) {
             return !n;
