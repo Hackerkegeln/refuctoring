@@ -15,7 +15,7 @@ export const generateFizzBuzz = number => {
     }
 
     if (!list.length) {
-        return (number / 4).toString();
+        return (number >> 2).toString();
     }
     return list || number.toString();
 };
