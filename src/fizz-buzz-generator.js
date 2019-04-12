@@ -26,7 +26,7 @@ const fizzPredicate = number => {
 const buzzPredicate = number => {
     function buzzPredicate(n) {
         if (n <= 0) {
-            return n === 0;
+            return !n;
         }
         return buzzPredicate(n - 5);
     }
