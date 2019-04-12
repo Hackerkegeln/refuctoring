@@ -27,7 +27,8 @@ const allRules = () => [
     {appliesTo: fizzPredicate_, result: A},
 ];
 
-const newRule = number => buzzPredicate(number) && fizzPredicate_(number);
+const newRule = number => OR(buzzPredicate(number), fizzPredicate_(number));
+const OR = (a, b) => a && b;
 
 const buzzPredicate = number => {
     while (number > 0) {
