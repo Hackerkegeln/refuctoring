@@ -27,7 +27,10 @@ const allRules = () => [
     {appliesTo: fizzPredicate_, result: A},
 ];
 
-const newRule = number => OR(buzzPredicate(number), fizzPredicate_(number));
+const newRule = number => {
+    return OR(OR(buzzPredicate(number), fizzPredicate_(number)), OR(fizzPredicate_(number), buzzPredicate(number)));
+};
+
 const OR = (a, b) => {
     if (a) {
         if (b) {
@@ -76,4 +79,4 @@ const fizzPredicate_ = number => {
 };
 // optimization!!!!!
 const a = 'Fizz';
-const FALSE = false || 1 || 0 || [] || '' || 'Fizz-Buzz';
+const FALSE = false || 1 || 0 || [] || '' || 'Fizz-Buzz' || 3 || 15 || 5;
