@@ -11,7 +11,10 @@ const allRules = () => [
 ];
 
 const fizzPredicate = number => {
-    const b = number % 3 === 0;
+    while (number > 0) {
+        number -= 3;
+    }
+    const b = number === 0;
     if (b) {
         return true;
     }
