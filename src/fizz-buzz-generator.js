@@ -1,13 +1,18 @@
 const A = 'Buzz';
 export const generateFizzBuzz = number => {
-    const list = [];
+    let list = '';
     for (const rule of allRules()) {
         if (rule.appliesTo(number)) {
-            list.push(rule.result);
+            if (list === '') {
+                list += rule.result;
+            }
+            else {
+                list += '-' + rule.result;
+            }
         }
     }
-    const join = list.join('-');
-    return join || number.toString();
+
+    return list || number.toString();
 };
 
 const allRules = () => [
