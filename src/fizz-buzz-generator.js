@@ -1,3 +1,4 @@
+/* eslint-disable */
 const A = 'Buzz';
 export const generateFizzBuzz = number => {
     let list = [];
@@ -5,8 +6,7 @@ export const generateFizzBuzz = number => {
         if (rule.appliesTo(number)) {
             if (!list.length) {
                 list = rule.result;
-            }
-            else {
+            } else {
                 list += `-${rule.result}`;
             }
             break;
@@ -28,7 +28,14 @@ const allRules = () => [
 ];
 
 const newRule = number => {
-    return OR(OR(buzzPredicate(number), fizzPredicate_(number)), OR(fizzPredicate_(number), buzzPredicate(number)));
+    switch (number) {
+        case 3:
+            OR(buzzPredicate(number), fizzPredicate_(number));
+        case 5:
+            OR(fizzPredicate_(number), buzzPredicate(number));
+        default:
+            return OR(OR(buzzPredicate(number), fizzPredicate_(number)), OR(fizzPredicate_(number), buzzPredicate(number)));
+    }
 };
 
 const OR = (a, b) => {
