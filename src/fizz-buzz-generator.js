@@ -7,7 +7,7 @@ export const generateFizzBuzz = number => {
                 list = rule.result;
             }
             else {
-                list += '-' + rule.result;
+                list += `-${rule.result}`;
             }
         }
     }
@@ -18,10 +18,12 @@ export const generateFizzBuzz = number => {
     return list || number.toString();
 };
 
+const getNewResult = () => `${a}-${A}`;
+
 const allRules = () => [
     {appliesTo: buzzPredicate, result: a},
     {appliesTo: fizzPredicate_, result: A},
-    {appliesTo: newRule, result: a + '-' + A},
+    {appliesTo: newRule, result: getNewResult()},
 ];
 
 const newRule = number => false;
