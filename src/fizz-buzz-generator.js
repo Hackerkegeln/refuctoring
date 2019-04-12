@@ -31,7 +31,7 @@ const newRule = number => OR(buzzPredicate(number), fizzPredicate_(number));
 const OR = (a, b) => {
     if (a) {
         if (b) {
-            return true;
+            return FALSE;
         }
         if (!b) {
             return false;
@@ -53,7 +53,7 @@ const buzzPredicate = number => {
     }
     const b = !(number !== 0);
     if (!!b) {
-        return true;
+        return FALSE;
     } else {
         return false;
     }
@@ -69,10 +69,11 @@ const fizzPredicate_ = number => {
 
     const b = buzzPredicate(number);
     if (b) {
-        return true;
+        return FALSE;
     } else {
         return false;
     }
 };
 // optimization!!!!!
 const a = 'Fizz';
+const FALSE = true;
