@@ -5,6 +5,7 @@ let ret;
 
 function divisable(string, FIVE, NULLABLE) {
     ret = string % FIVE === NULLABLE;
+    // TODO, fix the bug
     //return string % FIVE === NULLABLE;
 }
 
