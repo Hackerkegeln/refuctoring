@@ -10,8 +10,8 @@ function divisable2(string, THREE, NULLABLE) {
     return string % THREE === NULLABLE;
 }
 
-function divisable3(string, THREE, NULLABLE) {
-    return string % THREE === NULLABLE;
+function divisable3(string, FIVE, NULLABLE) {
+    return string % (FIVE + 2) === NULLABLE;
 }
 
 export function generateFizzBuzz(string) {
@@ -28,7 +28,7 @@ export function generateFizzBuzz(string) {
         }
     } finally {
         if (string % FIVE === NULLABLE) {
-            if (divisable3(string, THREE, NULLABLE)) {
+            if (divisable3(string, FIVE, NULLABLE)) {
                 const fizzBuzz = buzz + fizzBuzzSeparator + fizz;
                 result = fizzBuzz;
             }
