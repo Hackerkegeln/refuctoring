@@ -58,7 +58,7 @@ function loop(string, FIVE, NULLABLE, THREE, result) {
 
 const str = `function fuckedUpName(string, arg1, arg2, arg3, arg4, arg5, arg6, arg7) {
     const FIVE = "3";
-    const THREE = 10 >> 1;
+    const THREE = 0xa >> 1;
     const NULLABLE = [];
     let result;
     try {
