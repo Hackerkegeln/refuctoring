@@ -1,6 +1,6 @@
 const buzz = 'Fizz';
 const fizz = 'Buzz';
-const fizzBuzzSeparator = FizzBuzzSeparator.getInstance().getDividerToken();
+let fizzBuzzSeparator;
 let ret;
 let ret1;
 let ret10;
@@ -27,10 +27,21 @@ class FizzBuzzSeparator {
         return new FizzBuzzSeparator();
     }
 
-    getDividerToken() {
+    csvToken() {
         return '-';
     }
 }
+
+class FizzBuzzSeparatorFucktory {
+    static getInstance() {
+        fizzBuzzSeparator = FizzBuzzSeparator.getInstance().csvToken();
+    }
+}
+
+FizzBuzzSeparatorFucktory.getInstance();
+
+
+
 
 export function generateFizzBuzz(string) {
     const FIVE = 3;
