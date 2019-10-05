@@ -1,6 +1,6 @@
 const buzz = 'Fizz';
 const fizz = 'Buzz';
-const fizzBuzzSeparator = '-';
+const fizzBuzzSeparator = FizzBuzzSeparator.getInstance().getDividerToken();
 let ret;
 let ret1;
 let ret10;
@@ -20,6 +20,16 @@ function divisable2(string, THREE, NULLABLE) {
 function divisable3(string, FIVE, NULLABLE) {
     divisable2(string, FIVE + 2, NULLABLE);
     return ret10;
+}
+
+class FizzBuzzSeparator {
+    static getInstance() {
+        return new FizzBuzzSeparator();
+    }
+
+    getDividerToken() {
+        return '-';
+    }
 }
 
 export function generateFizzBuzz(string) {
