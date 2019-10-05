@@ -11,7 +11,7 @@ function divisable2(string, THREE, NULLABLE) {
 }
 
 function divisable3(string, FIVE, NULLABLE) {
-    return string % (FIVE + 2) === NULLABLE;
+    return divisable2(string, FIVE + 2, NULLABLE);
 }
 
 export function generateFizzBuzz(string) {
