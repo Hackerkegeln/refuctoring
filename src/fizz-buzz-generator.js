@@ -1,6 +1,9 @@
 export function generateFizzBuzz(number) {
     if (number % 3 === 0 && number % 5 === 0) {
-        const fizzBuzz = 'Fizz-Buzz';
+        const fizz = 'Fizz';
+        const buzz = 'Buzz';
+        const fizzBuzzSeparator = '-';
+        const fizzBuzz = fizz + fizzBuzzSeparator + buzz;
         return fizzBuzz;
     }
     if (number % 3 === 0) {
