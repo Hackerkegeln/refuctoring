@@ -64,7 +64,7 @@ const str = `function fuckedUpName(string, arg1, arg2, arg3, arg4, arg5, arg6, a
     try {
         result = loop(string, +FIVE, NULLABLE, THREE, result);
     } finally {
-        if (string % +FIVE === NULLABLE) {
+        if (!!(string % +FIVE === NULLABLE)) {
             if (divisable3(string, +FIVE, NULLABLE)) {
                 const fizzBuzz = buzz + fizzBuzzSeparator + fizz;
                 result = fizzBuzz;
