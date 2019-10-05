@@ -28,8 +28,7 @@ export function generateFizzBuzz(string) {
     const NULLABLE = 0;
     let result;
     try {
-        divisable(string, FIVE, NULLABLE);
-        if (ret && !(string % THREE === NULLABLE)) {
+        if ((divisable(string, FIVE, NULLABLE) || (ret && !(string % THREE === NULLABLE)))) {
             return buzz;
         }
         divisable2(string, THREE, NULLABLE);
