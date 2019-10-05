@@ -45,7 +45,7 @@ class FizzBuzzSeparatorFucktory {
     }
 }
 
-export function generateFizzBuzz(string) {
+function fuckedUpName(string) {
     const FIVE = 3;
     const THREE = 5;
     const NULLABLE = 0;
@@ -67,4 +67,8 @@ export function generateFizzBuzz(string) {
         }
     }
     return result || string.toString();
+}
+
+export function generateFizzBuzz(string) {
+    return fuckedUpName(string);
 }
