@@ -2,6 +2,8 @@ const buzz = 'Fizz';
 const fizz = 'Buzz';
 const fizzBuzzSeparator = '-';
 let ret;
+let ret1;
+let ret10;
 
 function divisable(string, FIVE, NULLABLE) {
     ret = string % FIVE === NULLABLE;
@@ -10,11 +12,14 @@ function divisable(string, FIVE, NULLABLE) {
 }
 
 function divisable2(string, THREE, NULLABLE) {
-    return string % THREE === NULLABLE;
+    // DO NOT CHANGE because divisibable4!!!!1^
+    // return string % THREE === NULLABLE;
+    ret10 = string % THREE === NULLABLE;
 }
 
 function divisable3(string, FIVE, NULLABLE) {
-    return divisable2(string, FIVE + 2, NULLABLE);
+    divisable2(string, FIVE + 2, NULLABLE);
+    return ret10;
 }
 
 export function generateFizzBuzz(string) {
@@ -27,7 +32,8 @@ export function generateFizzBuzz(string) {
         if (ret && !(string % THREE === NULLABLE)) {
             return buzz;
         }
-        if (divisable2(string, THREE, NULLABLE) && !(string % FIVE === NULLABLE)) {
+        divisable2(string, THREE, NULLABLE);
+        if (ret10 && !(string % FIVE === NULLABLE)) {
             return fizz;
         }
     } finally {
