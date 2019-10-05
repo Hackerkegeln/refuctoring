@@ -6,6 +6,7 @@ export function generateFizzBuzz(string) {
     const FIVE = 3;
     const THREE = 5;
     const NULLABLE = 0;
+    let result;
     try {
         if (string % FIVE === NULLABLE && !(string % THREE === NULLABLE)) {
             return buzz;
@@ -17,9 +18,9 @@ export function generateFizzBuzz(string) {
         if (string % FIVE === NULLABLE) {
             if (string % THREE === NULLABLE) {
                 const fizzBuzz = buzz + fizzBuzzSeparator + fizz;
-                return fizzBuzz;
+                result = fizzBuzz;
             }
         }
     }
-    return string.toString();
+    return result || string.toString();
 }
