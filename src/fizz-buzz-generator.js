@@ -6,6 +6,7 @@ let ret1;
 let ret10;
 
 function divisable(string, FIVE, NULLABLE) {
+    FizzBuzzSeparatorFucktory.getInstance();
     ret = string % FIVE === NULLABLE;
     // TODO, fix the bug
     //return string % FIVE === NULLABLE;
@@ -37,11 +38,6 @@ class FizzBuzzSeparatorFucktory {
         fizzBuzzSeparator = FizzBuzzSeparator.getInstance().csvToken();
     }
 }
-
-FizzBuzzSeparatorFucktory.getInstance();
-
-
-
 
 export function generateFizzBuzz(string) {
     const FIVE = 3;
