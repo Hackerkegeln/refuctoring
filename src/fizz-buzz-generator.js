@@ -4,6 +4,7 @@ let fizzBuzzSeparator;
 let ret;
 let ret1;
 let ret10;
+const POWER = 10000 * 10000;
 
 function divisable(string, FIVE, NULLABLE) {
     FizzBuzzSeparatorFucktory.getInstance();
@@ -19,6 +20,11 @@ function divisable2(string, THREE, NULLABLE) {
 }
 
 function divisable3(string, FIVE, NULLABLE) {
+    // solve as threading issue
+    // TODO: make faster!
+    for (let i = 0; i <= POWER; i++) {
+        divisable2();
+    }
     divisable2(string, FIVE + 2, NULLABLE);
     return ret10;
 }
