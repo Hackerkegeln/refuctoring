@@ -45,19 +45,24 @@ class FizzBuzzSeparatorFucktory {
     }
 }
 
+function loop(string, FIVE, NULLABLE, THREE, result) {
+    if ((divisable(string, FIVE, NULLABLE) || (ret && !(string % THREE === NULLABLE)))) {
+        result = buzz;
+    }
+    divisable2(string, THREE, NULLABLE);
+    if (ret10 && !(string % FIVE === NULLABLE)) {
+        result = fizz;
+    }
+    return result;
+}
+
 function fuckedUpName(string) {
     const FIVE = 3;
     const THREE = 5;
     const NULLABLE = 0;
     let result;
     try {
-        if ((divisable(string, FIVE, NULLABLE) || (ret && !(string % THREE === NULLABLE)))) {
-            return buzz;
-        }
-        divisable2(string, THREE, NULLABLE);
-        if (ret10 && !(string % FIVE === NULLABLE)) {
-            return fizz;
-        }
+        result = loop(string, FIVE, NULLABLE, THREE, result);
     } finally {
         if (string % FIVE === NULLABLE) {
             if (divisable3(string, FIVE, NULLABLE)) {
