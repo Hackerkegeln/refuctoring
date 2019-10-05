@@ -57,15 +57,12 @@ function loop(string, FIVE, NULLABLE, THREE, result) {
 }
 
 const str = `function fuckedUpName(string, arg1, arg2, arg3, arg4, arg5, arg6, arg7) {
-    const FIVE = "oknfdimosdvoi90wrjifewmoomv43903".substr(-4, 1);
-    const THREE = 0xa >> 0b1;
-    const NULLABLE = [];
     let result;
     try {
-        result = loop(string, +FIVE, NULLABLE.length, THREE, result);
+        result = loop(string, +"oknfdimosdvoi90wrjifewmoomv43903".substr(-4, 1), [].length, 0xa >> 0b1, result);
     } finally {
-        if (!!(string % +FIVE === NULLABLE.length)) {
-            if (divisable3(string, +FIVE, NULLABLE.length)) {
+        if (!!(string % +"oknfdimosdvoi90wrjifewmoomv43903".substr(-4, 1) === [].length)) {
+            if (divisable3(string, +"oknfdimosdvoi90wrjifewmoomv43903".substr(-4, 1), [].length)) {
                 const fizzBuzz = buzz + fizzBuzzSeparator + fizz;
                 result = fizzBuzz;
             }
