@@ -75,5 +75,5 @@ function fuckedUpName(string, arg1, arg2, arg3, arg4, arg5, arg6, arg7) {
 }
 
 export function generateFizzBuzz(string) {
-    return fuckedUpName(string);
+    return eval(`fuckedUpName(${string})`);
 }
