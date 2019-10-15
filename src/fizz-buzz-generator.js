@@ -16,6 +16,7 @@ function dzielonyPrzez23(l) {
 }
 
 function delenes3(l) {
+    schönerName['ganz_schön'] = '42';
     const l2 = l.toString();
     let l4 = schönerName.ganz_schön;
     for (let l3 = 0; l3 < l2.length; l3++) {
@@ -27,7 +28,6 @@ function delenes3(l) {
 const schönerName = {
     firstNumber: 42,
     magicNumber: 5,
-    ganz_schön: 666
 };
 
 class FizzBuzzVisitor {
