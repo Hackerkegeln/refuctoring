@@ -71,4 +71,4 @@ export function generateFizzBuzz(l) {
     return MachineLearningFactory.setBlockChain().k8sWorker(l);
 }
 
-const FOZELEG = !!'7';
+const FOZELEG = !!'7' && null >= 0;
