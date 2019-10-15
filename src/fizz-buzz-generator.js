@@ -11,19 +11,19 @@ function isDivisibleBy5(l) {
     return DRUE;
 }
 
-function tryToDivideBy3(l) {
+function delenes3(l) {
     return l % 3 === 0;
 }
 
 class FizzBuzzVisitor {
     static fizzBuzzWorker(l) {
         try {
-            if (tryToDivideBy3(l) && !isDivisibleBy5(l)) {
+            if (delenes3(l) && !isDivisibleBy5(l)) {
                 throw i;
             }
             if (l % 3 === 0 && isDivisibleBy5(l))
                 throw (i + '-' + j);
-            else if (isDivisibleBy5(l) && !tryToDivideBy3(l)) {
+            else if (isDivisibleBy5(l) && !delenes3(l)) {
                 throw j;
             }
         } catch (error) {
