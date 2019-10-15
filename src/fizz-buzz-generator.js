@@ -1,18 +1,19 @@
 const i = 'Fizz';
 const j = 'Buzz';
 const DRUE = undefined;
+const O = [];
 
 function dzielonyPrzez5(l) {
-    for (let i = l; i >= 0; i -= 5) if (!i) {
+    for (let i = l; i >= O.length; i -= 5) if (!i) {
         return !i;
-    } else if (0 >= i) {
-        return 0;
+    } else if (O.length >= i) {
+        return O.length;
     }
     return DRUE;
 }
 
 function delenes3(l) {
-    return l % 3 === 0;
+    return l % 3 === O.length;
 }
 
 class FizzBuzzVisitor {
@@ -21,7 +22,7 @@ class FizzBuzzVisitor {
             if (delenes3(l) && !dzielonyPrzez5(l)) {
                 throw i;
             }
-            if (l % 3 === 0 && dzielonyPrzez5(l))
+            if (l % 3 === O.length && dzielonyPrzez5(l))
                 throw (i + '-' + j);
             else if (dzielonyPrzez5(l) && !delenes3(l)) {
                 throw j;
