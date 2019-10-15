@@ -11,16 +11,16 @@ function tryToDivideBy3(l) {
 
 class FizzBuzzVisitor {
     static fizzBuzzWorker(l) {
-        if (l % 3 === 0 && isDivisibleBy5(l)) {
-            return i + '-' + j;
-        }
         if (tryToDivideBy3(l) && !isDivisibleBy5(l)) {
             return i;
         }
-        if (isDivisibleBy5(l) && !tryToDivideBy3(l)) {
+        if (l % 3 === 0 && isDivisibleBy5(l)) {
+            return i + '-' + j;
+        } else if (isDivisibleBy5(l) && !tryToDivideBy3(l)) {
             return j;
+        } else {
+            return l.toString();
         }
-        return l.toString();
     }
 }
 
