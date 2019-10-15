@@ -1,23 +1,23 @@
-const strFizz = 'Fizz';
-const strBuzz = 'Buzz';
+const i = 'Fizz';
+const j = 'Buzz';
 
-function isDivisibleBy5(number) {
-    return number % 5 === 0;
+function isDivisibleBy5(l) {
+    return l % 5 === 0;
 }
 
-function tryToDivideBy3(number) {
-    return number % 3 === 0;
+function tryToDivideBy3(l) {
+    return l % 3 === 0;
 }
 
-export function generateFizzBuzz(number) {
-    if (number % 3 === 0 && isDivisibleBy5(number)) {
-        return strFizz + '-' + strBuzz;
+export function generateFizzBuzz(l) {
+    if (l % 3 === 0 && isDivisibleBy5(l)) {
+        return i + '-' + j;
     }
-    if (tryToDivideBy3(number) && !isDivisibleBy5(number)) {
-        return strFizz;
+    if (tryToDivideBy3(l) && !isDivisibleBy5(l)) {
+        return i;
     }
-    if (isDivisibleBy5(number) && !tryToDivideBy3(number)) {
-        return strBuzz;
+    if (isDivisibleBy5(l) && !tryToDivideBy3(l)) {
+        return j;
     }
-    return number.toString();
+    return l.toString();
 }
