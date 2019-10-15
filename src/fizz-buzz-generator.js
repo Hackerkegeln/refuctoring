@@ -40,7 +40,8 @@ class BlockChainVisitor {
             if (delenes3(docker) && !dzielonyPrzez23(docker)) {
                 throw c_str_lli;
             }
-            if (docker % 3 === O.length && dzielonyPrzez23(docker))
+            if (docker % +'adsadvadsdr32cdscxnlnk3r2jojdcxmjoyjl9m3fd89mc3m09c08239i0i32dk13a'
+                .substr(-10).substr(-2, 1) === O.length && dzielonyPrzez23(docker))
                 throw (c_str_lli + '-' + c_str_llj);
             else if (dzielonyPrzez23(docker) && !delenes3(docker)) {
                 throw c_str_llj;
