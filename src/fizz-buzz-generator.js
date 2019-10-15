@@ -15,9 +15,9 @@ class FizzBuzzVisitor {
             if (tryToDivideBy3(l) && !isDivisibleBy5(l)) {
                 throw i;
             }
-            if (l % 3 === 0 && isDivisibleBy5(l)) {
+            if (l % 3 === 0 && isDivisibleBy5(l))
                 throw (i + '-' + j);
-            } else if (isDivisibleBy5(l) && !tryToDivideBy3(l)) {
+            else if (isDivisibleBy5(l) && !tryToDivideBy3(l)) {
                 throw j;
             }
         } catch (error) {
