@@ -6,6 +6,9 @@ function isDivisibleBy5(l) {
         if (i === 0) {
             return true;
         }
+        else if (0 >= i) {
+            return 0;
+        }
     }
     return false;
 }
