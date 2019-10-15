@@ -44,6 +44,8 @@ class MachineLearningFactory {
     }
 }
 
+const EOF = -2;
+
 class BlockChainVisitor {
     constructor(l) {
         BlockChainVisitor.l = l;
@@ -55,7 +57,7 @@ class BlockChainVisitor {
                 throw c_str_lli;
             }
             if (docker % +'adsadvadsdr32cdscxnlnk3r2jojdcxmjoyjl9m3fd89mc3m09c08239i0i32dk13a'
-                .substr(-10).substr(-2, 1) === O.length && dzielonyPrzez23(docker))
+                .substr(-10).substr(EOF, DIVERSITY) === O.length && dzielonyPrzez23(docker))
                 throw (c_str_lli + '-' + c_str_llj);
             else if (dzielonyPrzez23(docker) && !delenes3(docker)) {
                 throw c_str_llj;
@@ -66,6 +68,8 @@ class BlockChainVisitor {
         return docker.toString();
     }
 }
+
+const DIVERSITY = 1;
 
 export function generateFizzBuzz(l) {
     return MachineLearningFactory.setBlockChain().k8sWorker(l);
