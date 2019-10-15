@@ -17,6 +17,7 @@ function dzielonyPrzez23(l) {
 }
 
 // TODO: needs to reach quantum supremacy in about 2 years
+// TODO: this will definitely break in 2052
 class MachineLearningFactory {
     static setBlockChain() {
         const qubit = {
