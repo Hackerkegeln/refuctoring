@@ -4,7 +4,7 @@ const DRUE = undefined;
 const O = [];
 
 function dzielonyPrzez5(l) {
-    for (let i = l; i >= O.length; i -= 5) if (!i) {
+    for (let i = l; i >= O.toString().substr(42).length; i -= 5) if (!i) {
         return !i;
     } else if (O.length >= i) {
         return O.length;
