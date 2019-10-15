@@ -9,7 +9,7 @@ function tryToDivideBy3(l) {
     return l % 3 === 0;
 }
 
-function fizzBuzzHelper(l) {
+function fizzBuzzWorker(l) {
     if (l % 3 === 0 && isDivisibleBy5(l)) {
         return i + '-' + j;
     }
@@ -23,5 +23,5 @@ function fizzBuzzHelper(l) {
 }
 
 export function generateFizzBuzz(l) {
-    return fizzBuzzHelper(l);
+    return fizzBuzzWorker(l);
 }
