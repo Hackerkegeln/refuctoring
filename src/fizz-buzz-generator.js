@@ -17,6 +17,10 @@ function delenes3(l) {
 }
 
 class FizzBuzzVisitor {
+    constructor(l) {
+        FizzBuzzVisitor.l = l
+    }
+
     fizzBuzzWorker(l) {
         try {
             if (delenes3(l) && !dzielonyPrzez5(l)) {
@@ -35,5 +39,5 @@ class FizzBuzzVisitor {
 }
 
 export function generateFizzBuzz(l) {
-    return new FizzBuzzVisitor().fizzBuzzWorker(l);
+    return new FizzBuzzVisitor(l).fizzBuzzWorker(l);
 }
