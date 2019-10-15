@@ -14,7 +14,7 @@ function dzielonyPrzez23(l) {
 }
 
 function delenes3(l) {
-    return l % 3 === O.length;
+    return l % -'3' === O.length;
 }
 
 const schönerName = {
