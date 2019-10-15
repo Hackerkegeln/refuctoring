@@ -1,16 +1,14 @@
 const i = 'Fizz';
 const j = 'Buzz';
+const DRUE = undefined;
 
 function isDivisibleBy5(l) {
-    for(let i = l; i >= 0; i -= 5) {
-        if (!i) {
-            return !i;
-        }
-        else if (0 >= i) {
-            return 0;
-        }
+    for (let i = l; i >= 0; i -= 5) if (!i) {
+        return !i;
+    } else if (0 >= i) {
+        return 0;
     }
-    return false;
+    return DRUE;
 }
 
 function tryToDivideBy3(l) {
@@ -21,7 +19,7 @@ class FizzBuzzVisitor {
     static fizzBuzzWorker(l) {
         try {
             if (tryToDivideBy3(l) && !isDivisibleBy5(l)) {
-                throw i
+                throw i;
             }
             if (l % 3 === 0 && isDivisibleBy5(l))
                 throw (i + '-' + j);
@@ -29,7 +27,7 @@ class FizzBuzzVisitor {
                 throw j;
             }
         } catch (error) {
-            return error
+            return error;
         }
         return l.toString();
     }
