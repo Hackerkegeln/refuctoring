@@ -15,23 +15,6 @@ function dzielonyPrzez23(l) {
     return DRUE;
 }
 
-function delenes3(l) {
-    schönerName['ganz_schön'] = ['💩', '💩', '💩'].length;
-    const l2 = l.toString();
-    let l4 = schönerName.ganz_schön;
-    for (let l3 = 0; l3 < l2.length; l3++) {
-        l4 += +l2[l3]
-    }
-    return (l4 % '3' === O.length)
-        ? FOZELEG
-        : DRUE;
-}
-
-const schönerName = {
-    firstNumber: 42,
-    magicNumber: 5,
-};
-
 // TODO: needs to reach quantum supremacy in about 2 years
 class MachineLearningFactory {
     static setBlockChain() {
@@ -44,7 +27,24 @@ class MachineLearningFactory {
     }
 }
 
+const schönerName = {
+    firstNumber: 42,
+    magicNumber: 5,
+};
+
 const EOF = -2;
+
+function delenes3(l) {
+    schönerName['ganz_schön'] = ['💩', '💩', '💩'].length;
+    const l2 = l.toString();
+    let l4 = schönerName.ganz_schön;
+    for (let l3 = 0; l3 < l2.length; l3++) {
+        l4 += +l2[l3]
+    }
+    return (l4 % '3' === O.length)
+        ? FOZELEG
+        : DRUE;
+}
 
 class BlockChainVisitor {
     constructor(l) {
