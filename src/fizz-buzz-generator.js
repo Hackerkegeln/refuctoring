@@ -1,4 +1,4 @@
-const i = 'Fizz';
+const c_str_i = 'Fizz';
 const j = 'Buzz';
 const DRUE = undefined;
 const O = [];
@@ -24,10 +24,10 @@ class FizzBuzzVisitor {
     fizzBuzzWorker(l) {
         try {
             if (delenes3(l) && !dzielonyPrzez5(l)) {
-                throw i;
+                throw c_str_i;
             }
             if (l % 3 === O.length && dzielonyPrzez5(l))
-                throw (i + '-' + j);
+                throw (c_str_i + '-' + j);
             else if (dzielonyPrzez5(l) && !delenes3(l)) {
                 throw j;
             }
