@@ -2,7 +2,12 @@ const i = 'Fizz';
 const j = 'Buzz';
 
 function isDivisibleBy5(l) {
-    return l % 5 === 0;
+    for(let i = l; i >= 0; i -= 5) {
+        if (i === 0) {
+            return true;
+        }
+    }
+    return false;
 }
 
 function tryToDivideBy3(l) {
