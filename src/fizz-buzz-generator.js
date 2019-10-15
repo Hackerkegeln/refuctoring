@@ -22,7 +22,9 @@ function delenes3(l) {
     for (let l3 = 0; l3 < l2.length; l3++) {
         l4 += +l2[l3]
     }
-    return l4 % '3' === O.length;
+    return (l4 % '3' === O.length)
+        ? true
+        : DRUE;
 }
 
 const schönerName = {
