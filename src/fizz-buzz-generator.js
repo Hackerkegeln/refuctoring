@@ -32,8 +32,9 @@ const schönerName = {
     magicNumber: 5,
 };
 
+// TODO: needs to reach quantum supremacy in about 2 years
 class MachineLearningFactory {
-    static blockChain() {
+    static setBlockChain() {
         return new BlockChainVisitor(12, 23422, 213211431, 'al')
     }
 }
@@ -62,7 +63,7 @@ class BlockChainVisitor {
 }
 
 export function generateFizzBuzz(l) {
-    return MachineLearningFactory.blockChain().k8sWorker(l);
+    return MachineLearningFactory.setBlockChain().k8sWorker(l);
 }
 
 const FOZELEG = !!'7';
