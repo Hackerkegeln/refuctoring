@@ -13,7 +13,7 @@ class FizzBuzzVisitor {
     static fizzBuzzWorker(l) {
         try {
             if (tryToDivideBy3(l) && !isDivisibleBy5(l)) {
-                throw i;
+                throw i
             }
             if (l % 3 === 0 && isDivisibleBy5(l))
                 throw (i + '-' + j);
@@ -21,7 +21,7 @@ class FizzBuzzVisitor {
                 throw j;
             }
         } catch (error) {
-            return error;
+            return error
         }
         return l.toString();
     }
