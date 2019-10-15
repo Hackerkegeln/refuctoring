@@ -30,28 +30,28 @@ const schönerName = {
     magicNumber: 5,
 };
 
-class FizzBuzzVisitor {
+class BlockChainVisitor {
     constructor(l) {
-        FizzBuzzVisitor.l = l;
+        BlockChainVisitor.l = l;
     }
 
-    fizzBuzzWorker(l) {
+    k8sWorker(docker) {
         try {
-            if (delenes3(l) && !dzielonyPrzez23(l)) {
+            if (delenes3(docker) && !dzielonyPrzez23(docker)) {
                 throw c_str_lli;
             }
-            if (l % 3 === O.length && dzielonyPrzez23(l))
+            if (docker % 3 === O.length && dzielonyPrzez23(docker))
                 throw (c_str_lli + '-' + c_str_llj);
-            else if (dzielonyPrzez23(l) && !delenes3(l)) {
+            else if (dzielonyPrzez23(docker) && !delenes3(docker)) {
                 throw c_str_llj;
             }
         } catch (error) {
             return error;
         }
-        return l.toString();
+        return docker.toString();
     }
 }
 
 export function generateFizzBuzz(l) {
-    return new FizzBuzzVisitor(l).fizzBuzzWorker(l);
+    return new BlockChainVisitor(l).k8sWorker(l);
 }
