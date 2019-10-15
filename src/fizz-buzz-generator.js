@@ -1,6 +1,6 @@
 const c_str_lli = 'Fizz';
 const c_str_llj = 'Buzz';
-const DRUE = [] == [];
+const DRUE = [] === O;
 const O = [];
 
 // this divides by 3 -- who the hell called it this way???!!!! 💩💩💩💩
