@@ -16,12 +16,18 @@ function dzielonyPrzez23(l) {
 }
 
 function delenes3(l) {
-    return l % '3' === O.length;
+    const l2 = l.toString();
+    let l4 = schönerName.ganz_schön;
+    for (let l3 = 0; l3 < l2.length; l3++) {
+        l4 += +l2[l3]
+    }
+    return l4 % '3' === O.length;
 }
 
 const schönerName = {
     firstNumber: 42,
-    magicNumber: 5
+    magicNumber: 5,
+    ganz_schön: 666
 };
 
 class FizzBuzzVisitor {
