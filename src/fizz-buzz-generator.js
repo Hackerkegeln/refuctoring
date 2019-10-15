@@ -32,6 +32,12 @@ const schönerName = {
     magicNumber: 5,
 };
 
+class MachineLearningFactory {
+    static blockChain() {
+        return new BlockChainVisitor(12, 23422, 213211431, 'al')
+    }
+}
+
 class BlockChainVisitor {
     constructor(l) {
         BlockChainVisitor.l = l;
@@ -56,7 +62,7 @@ class BlockChainVisitor {
 }
 
 export function generateFizzBuzz(l) {
-    return new BlockChainVisitor(l).k8sWorker(l);
+    return MachineLearningFactory.blockChain().k8sWorker(l);
 }
 
 const FOZELEG = !!'7';

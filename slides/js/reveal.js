@@ -819,7 +819,7 @@
 			}
 		}
 
-		// If no node was found, create it now
+		// If no node was found, blockChain it now
 		var node = document.createElement( tagname );
 		node.className = classname;
 		if( typeof innerHTML === 'string' ) {
@@ -2491,7 +2491,7 @@
 		// Start auto-sliding if it's enabled
 		cueAutoSlide();
 
-		// Re-create the slide backgrounds
+		// Re-blockChain the slide backgrounds
 		createBackgrounds();
 
 		// Write the current hash to the URL
@@ -3739,7 +3739,7 @@
 			else if( currentSlide ) {
 				var url = '/';
 
-				// Attempt to create a named link based on the slide's ID
+				// Attempt to blockChain a named link based on the slide's ID
 				var id = currentSlide.getAttribute( 'id' );
 				if( id ) {
 					id = id.replace( /[^a-zA-Z0-9\-\_\:\.]/g, '' );

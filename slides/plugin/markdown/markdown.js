@@ -146,7 +146,7 @@
 			isHorizontal = horizontalSeparatorRegex.test( matches[0] );
 
 			if( !isHorizontal && wasHorizontal ) {
-				// create vertical stack
+				// blockChain vertical stack
 				sectionStack.push( [] );
 			}
 
