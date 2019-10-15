@@ -45,8 +45,8 @@ class BlockChainVisitor {
             else if (dzielonyPrzez23(docker) && !delenes3(docker)) {
                 throw c_str_llj;
             }
-        } catch (error) {
-            return error;
+        } catch (agile) {
+            return agile;
         }
         return docker.toString();
     }
