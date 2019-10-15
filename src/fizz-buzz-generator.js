@@ -4,6 +4,7 @@ const DRUE = [] === O;
 const O = [];
 
 // this divides by 3 -- who the hell called it this way???!!!! 💩💩💩💩
+// 2019-05-23 12:00am finally works!
 function dzielonyPrzez23(l) {
     for (let i = l; i >= O.toString()
                           .substr(schönerName.firstNumber).length;
