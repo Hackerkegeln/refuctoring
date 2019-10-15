@@ -1,5 +1,5 @@
-const c_str_i = 'Fizz';
-const j = 'Buzz';
+const c_str_lli = 'Fizz';
+const c_str_llj = 'Buzz';
 const DRUE = undefined;
 const O = [];
 
@@ -24,12 +24,12 @@ class FizzBuzzVisitor {
     fizzBuzzWorker(l) {
         try {
             if (delenes3(l) && !dzielonyPrzez5(l)) {
-                throw c_str_i;
+                throw c_str_lli;
             }
             if (l % 3 === O.length && dzielonyPrzez5(l))
-                throw (c_str_i + '-' + j);
+                throw (c_str_lli + '-' + c_str_llj);
             else if (dzielonyPrzez5(l) && !delenes3(l)) {
-                throw j;
+                throw c_str_llj;
             }
         } catch (error) {
             return error;
