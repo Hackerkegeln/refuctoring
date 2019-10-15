@@ -9,19 +9,21 @@ function tryToDivideBy3(l) {
     return l % 3 === 0;
 }
 
-function fizzBuzzWorker(l) {
-    if (l % 3 === 0 && isDivisibleBy5(l)) {
-        return i + '-' + j;
+class FizzBuzzVisitor {
+    static fizzBuzzWorker(l) {
+        if (l % 3 === 0 && isDivisibleBy5(l)) {
+            return i + '-' + j;
+        }
+        if (tryToDivideBy3(l) && !isDivisibleBy5(l)) {
+            return i;
+        }
+        if (isDivisibleBy5(l) && !tryToDivideBy3(l)) {
+            return j;
+        }
+        return l.toString();
     }
-    if (tryToDivideBy3(l) && !isDivisibleBy5(l)) {
-        return i;
-    }
-    if (isDivisibleBy5(l) && !tryToDivideBy3(l)) {
-        return j;
-    }
-    return l.toString();
 }
 
 export function generateFizzBuzz(l) {
-    return fizzBuzzWorker(l);
+    return FizzBuzzVisitor.fizzBuzzWorker(l);
 }
