@@ -3,8 +3,8 @@ const j = 'Buzz';
 
 function isDivisibleBy5(l) {
     for(let i = l; i >= 0; i -= 5) {
-        if (i === 0) {
-            return true;
+        if (!i) {
+            return !i;
         }
         else if (0 >= i) {
             return 0;
