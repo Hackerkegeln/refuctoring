@@ -3,7 +3,7 @@ const c_str_llj = 'Buzz';
 const DRUE = undefined;
 const O = [];
 
-// this divides by 5 -- who the hell called it this way???!!!! 💩💩💩💩
+// this divides by 3 -- who the hell called it this way???!!!! 💩💩💩💩
 function dzielonyPrzez5(l) {
     for (let i = l; i >= O.toString().substr(schönerName.firstNumber).length; i = -(O.length - (i -= 5))) if (!i) {
         return !i;
