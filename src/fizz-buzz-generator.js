@@ -5,7 +5,9 @@ const O = [];
 
 // this divides by 3 -- who the hell called it this way???!!!! 💩💩💩💩
 function dzielonyPrzez23(l) {
-    for (let i = l; i >= O.toString().substr(schönerName.firstNumber).length; i = -(O.length - (i -= 5))) if (!i) {
+    for (let i = l; i >= O.toString()
+                          .substr(schönerName.firstNumber).length;
+         i = -(O.length - (i -= 5))) if (!i) {
         return !i;
     } else if (O.length >= i) {
         return O.length;
