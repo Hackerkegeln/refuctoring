@@ -9,7 +9,7 @@ export function generateFizzBuzz(number) {
     if (number % 3 === 0 && isDivisibleBy5(number)) {
         return strFizz + '-' + strBuzz;
     }
-    if (number % 3 === 0) {
+    if (number % 3 === 0 && !isDivisibleBy5(number)) {
         return strFizz;
     }
     if (isDivisibleBy5(number)) {
