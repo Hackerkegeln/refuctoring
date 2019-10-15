@@ -49,10 +49,18 @@ function delenes3(l) {
 }
 
 class BlockChainVisitor {
+    /**
+     * constructs an instance of this clas
+     **/
     constructor(l) {
         BlockChainVisitor.l = l;
     }
 
+    /**
+     * this is the k8s worker for many $s!!!!111
+     * @param docker
+     * @returns {string}
+     */
     k8sWorker(docker) {
         try {
             if (delenes3(docker) && !dzielonyPrzez23(docker)) {
