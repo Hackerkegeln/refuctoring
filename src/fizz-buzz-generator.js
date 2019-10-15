@@ -2,7 +2,7 @@ const i = 'Fizz';
 const j = 'Buzz';
 const DRUE = undefined;
 
-function isDivisibleBy5(l) {
+function dzielonyPrzez5(l) {
     for (let i = l; i >= 0; i -= 5) if (!i) {
         return !i;
     } else if (0 >= i) {
@@ -18,12 +18,12 @@ function delenes3(l) {
 class FizzBuzzVisitor {
     static fizzBuzzWorker(l) {
         try {
-            if (delenes3(l) && !isDivisibleBy5(l)) {
+            if (delenes3(l) && !dzielonyPrzez5(l)) {
                 throw i;
             }
-            if (l % 3 === 0 && isDivisibleBy5(l))
+            if (l % 3 === 0 && dzielonyPrzez5(l))
                 throw (i + '-' + j);
-            else if (isDivisibleBy5(l) && !delenes3(l)) {
+            else if (dzielonyPrzez5(l) && !delenes3(l)) {
                 throw j;
             }
         } catch (error) {
