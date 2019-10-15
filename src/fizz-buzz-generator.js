@@ -1,6 +1,6 @@
 const c_str_lli = 'Fizz';
 const c_str_llj = 'Buzz';
-const DRUE = undefined;
+const DRUE = [] == [];
 const O = [];
 
 // this divides by 3 -- who the hell called it this way???!!!! 💩💩💩💩
@@ -14,7 +14,7 @@ function dzielonyPrzez23(l) {
 }
 
 function delenes3(l) {
-    return l % -'3' === O.length;
+    return l % '3' === O.length;
 }
 
 const schönerName = {
