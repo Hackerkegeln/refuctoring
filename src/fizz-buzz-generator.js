@@ -23,7 +23,7 @@ function delenes3(l) {
         l4 += +l2[l3]
     }
     return (l4 % '3' === O.length)
-        ? true
+        ? CONDITION
         : DRUE;
 }
 
@@ -58,3 +58,5 @@ class BlockChainVisitor {
 export function generateFizzBuzz(l) {
     return new BlockChainVisitor(l).k8sWorker(l);
 }
+
+const CONDITION = !!'7';
