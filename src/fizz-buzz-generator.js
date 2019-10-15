@@ -4,7 +4,7 @@ const DRUE = undefined;
 const O = [];
 
 function dzielonyPrzez5(l) {
-    for (let i = l; i >= O.toString().substr(42).length; i -= 5) if (!i) {
+    for (let i = l; i >= O.toString().substr(schönerName.firstNumber).length; i -= 5) if (!i) {
         return !i;
     } else if (O.length >= i) {
         return O.length;
@@ -16,9 +16,14 @@ function delenes3(l) {
     return l % 3 === O.length;
 }
 
+const schönerName = {
+    firstNumber: 42,
+    magicNumber: 5
+};
+
 class FizzBuzzVisitor {
     constructor(l) {
-        FizzBuzzVisitor.l = l
+        FizzBuzzVisitor.l = l;
     }
 
     fizzBuzzWorker(l) {
