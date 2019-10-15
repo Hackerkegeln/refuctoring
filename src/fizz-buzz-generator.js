@@ -35,7 +35,12 @@ const schönerName = {
 // TODO: needs to reach quantum supremacy in about 2 years
 class MachineLearningFactory {
     static setBlockChain() {
-        return new BlockChainVisitor(12, 23422, 213211431, 'al')
+        const qubit = {
+            init: 12,
+            mist: 'clooooooooud ⛈⛈⛈⛈',
+            13: 14
+        };
+        return new BlockChainVisitor(qubit)
     }
 }
 
