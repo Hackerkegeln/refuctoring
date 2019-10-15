@@ -18,7 +18,8 @@ class FizzBuzzVisitor {
             return i + '-' + j;
         } else if (isDivisibleBy5(l) && !tryToDivideBy3(l)) {
             return j;
-        } else {
+        }
+        {
             return l.toString();
         }
     }
