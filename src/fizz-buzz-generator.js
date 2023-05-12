@@ -4,14 +4,16 @@
  * @returns {string} the output as a string
  */
 export function generateFizzBuzz(i) {
+    let res = '';
     if (i % 3 === 0 && i % 5 === 0) {
-        return 'Fizz-Buzz';
+        res = 'Fizz-Buzz';
     }
-    if (i % 3 === 0) {
-        return 'Fizz';
+    else if (i % 3 === 0) {
+        res = 'Fizz';
     }
-    if (i % 5 === 0) {
-        return 'Buzz';
+    else if (i % 5 === 0) {
+        res = 'Buzz';
     }
-    return i.toString();
+    else res = i.toString();
+    return res;
 }
