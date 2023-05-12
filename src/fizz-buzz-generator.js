@@ -8,11 +8,13 @@ export function generateFizzBuzz(i) {
     const sleep = 'zz';
     const fizz = 'Fi' + sleep;
     const buzz = 'Bu' + sleep;
-    if (i % 3 === 0 && i % 5 === 0) {
+    const three = 15 / 5;
+    const five = 15 / 3;
+    if (i % three === 0 && i % five === 0) {
         res = fizz + '-' + buzz;
-    } else if (i % 3 === 0) {
+    } else if (i % three === 0) {
         res = fizz;
-    } else if (i % 5 === 0) {
+    } else if (i % five === 0) {
         res = buzz;
     } else res = i.toString();
     return res;
