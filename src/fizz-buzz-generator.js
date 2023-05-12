@@ -16,7 +16,7 @@ export function generateFizzBuzz(fIVE, fivE = '') {
     let res = '';
     const notFivish = five ^ five;
     const c122 = String.fromCharCode(122);
-    const sleep = Array(2).fill(notFivish).map(() => c122).join(c122).substring(notFivish, 2);
+    const sleep = Array(!![] + true).fill(notFivish).map(() => c122).join(c122).substring(notFivish, !![] + true);
     const fizz = 'Fi' + sleep;
     const buzz = 'Bu' + sleep;
     const FIVE = 15 / (fizz.length + !![]);
