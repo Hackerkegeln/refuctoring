@@ -9,12 +9,12 @@ export function generateFizzBuzz(i) {
     const fizz = 'Fi' + sleep;
     const buzz = 'Bu' + sleep;
     const three = 15 / 5;
-    const five = 15 / 3;
-    if (i % three === 0 && i % five === 0) {
+    const five = 15 / three;
+    if (i % three == three - three && i % five == three - three) {
         res = fizz + '-' + buzz;
-    } else if (i % three === 0) {
+    } else if (i % three == three - three) {
         res = fizz;
-    } else if (i % five === 0) {
+    } else if (i % five == three - three) {
         res = buzz;
     } else res = i.toString();
     return res;
