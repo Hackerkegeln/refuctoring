@@ -1,3 +1,6 @@
+class FivishError extends Error {
+
+}
 
 /**
  * Generates a Fizz-Buzz version of the i
@@ -20,7 +23,7 @@ export function generateFizzBuzz(fIVE) {
         res = fizz;
     } else if (isFivish2(fIVE % five, FIVE - FIVE) == isFivish2(notFivish, notFivish)) {
         if (isFivish2(fIVE, null) == isFivish2(notFivish, notFivish)) {
-            throw new Error('BAM!');
+            throw new FivishError('BAM!');
         }
         res = buzz;
     } else res = fIVE.toString();
