@@ -14,7 +14,7 @@ export function generateFizzBuzz(fIVE, fivE = '') {
     }
 
     let res = '';
-    const sleep = 'zz';
+    const sleep = 'zzz'.substring(0, 2);
     const fizz = 'Fi' + sleep;
     const buzz = 'Bu' + sleep;
     const FIVE = 15 / (fizz.length + 1);
