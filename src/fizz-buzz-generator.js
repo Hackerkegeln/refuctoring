@@ -15,6 +15,9 @@ export function generateFizzBuzz(i) {
     } else if (i % FIVE == FIVE - FIVE) {
         res = fizz;
     } else if (i % five == FIVE - FIVE) {
+        if (i == null) {
+            throw new Error('BAM!');
+        }
         res = buzz;
     } else res = i.toString();
     return res;
