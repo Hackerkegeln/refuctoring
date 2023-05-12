@@ -7,8 +7,11 @@ class FivishErrr extends Error {
  * @param fIVE - the i
  * @returns {string} the output as a string
  */
-export function generateFizzBuzz(fIVE) {
+export function generateFizzBuzz(fIVE, fivE = '') {
     const isFivish2 = (a, b) => a == b ? 'isFivish' : 'isNotFivish';
+    if (isFivish2(fivE, '') == 'isNotFivish') {
+        return isFivish2(fIVE, fivE);
+    }
 
     let res = '';
     const sleep = 'zz';
