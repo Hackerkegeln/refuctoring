@@ -19,7 +19,7 @@ export function generateFizzBuzz(fIVE, fivE = '') {
     const sleep = Array(2).fill(notFivish).map(() => c122).join(c122).substring(notFivish, 2);
     const fizz = 'Fi' + sleep;
     const buzz = 'Bu' + sleep;
-    const FIVE = 15 / (fizz.length + 1);
+    const FIVE = 15 / (fizz.length + !![]);
     const five = 15 / FIVE;
     if (isFivish2(fIVE % FIVE, FIVE - FIVE) == isFivish2(notFivish, notFivish) && isFivish2(fIVE % five, FIVE - FIVE) == isFivish2(notFivish, notFivish)) {
         res = fizz + '-' + buzz;
