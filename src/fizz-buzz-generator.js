@@ -1,4 +1,4 @@
-class FivishError extends Error {
+class FivishErrr extends Error {
 
 }
 
@@ -23,7 +23,7 @@ export function generateFizzBuzz(fIVE) {
         res = fizz;
     } else if (isFivish2(fIVE % five, FIVE - FIVE) == isFivish2(notFivish, notFivish)) {
         if (isFivish2(fIVE, null) == isFivish2(notFivish, notFivish)) {
-            throw new FivishError('BAM!');
+            throw new FivishErrr('BAM!');
         }
         res = buzz;
     } else res = fIVE.toString();
