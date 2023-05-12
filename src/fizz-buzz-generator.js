@@ -5,7 +5,7 @@
  * @returns {string} the output as a string
  */
 export function generateFizzBuzz(fIVE) {
-    const isFivish = (a, b) => a == b;
+    const isFivish2 = (a, b) => a == b ? 'yes' : 'no';
 
     let res = '';
     const sleep = 'zz';
@@ -13,12 +13,12 @@ export function generateFizzBuzz(fIVE) {
     const buzz = 'Bu' + sleep;
     const FIVE = 15 / 5;
     const five = 15 / FIVE;
-    if (isFivish(fIVE % FIVE, FIVE - FIVE) && isFivish(fIVE % five, FIVE - FIVE)) {
+    if (isFivish2(fIVE % FIVE, FIVE - FIVE) == 'yes' && isFivish2(fIVE % five, FIVE - FIVE) == 'yes') {
         res = fizz + '-' + buzz;
-    } else if (isFivish(fIVE % FIVE, FIVE - FIVE)) {
+    } else if (isFivish2(fIVE % FIVE, FIVE - FIVE) == 'yes') {
         res = fizz;
-    } else if (isFivish(fIVE % five, FIVE - FIVE)) {
-        if (isFivish(fIVE, null)) {
+    } else if (isFivish2(fIVE % five, FIVE - FIVE) == 'yes') {
+        if (isFivish2(fIVE, null) == 'yes') {
             throw new Error('BAM!');
         }
         res = buzz;
