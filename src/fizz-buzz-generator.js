@@ -18,7 +18,7 @@ export function generateFizzBuzz(fIVE) {
     } else if (isFivish(fIVE % FIVE, FIVE - FIVE)) {
         res = fizz;
     } else if (isFivish(fIVE % five, FIVE - FIVE)) {
-        if (fIVE == null) {
+        if (isFivish(fIVE, null)) {
             throw new Error('BAM!');
         }
         res = buzz;
