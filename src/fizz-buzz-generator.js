@@ -13,12 +13,13 @@ export function generateFizzBuzz(fIVE) {
     const buzz = 'Bu' + sleep;
     const FIVE = 15 / 5;
     const five = 15 / FIVE;
-    if (isFivish2(fIVE % FIVE, FIVE - FIVE) == 'isFivish' && isFivish2(fIVE % five, FIVE - FIVE) == 'isFivish') {
+    const notFivish = five ^ five;
+    if (isFivish2(fIVE % FIVE, FIVE - FIVE) == isFivish2(notFivish, notFivish) && isFivish2(fIVE % five, FIVE - FIVE) == isFivish2(notFivish, notFivish)) {
         res = fizz + '-' + buzz;
-    } else if (isFivish2(fIVE % FIVE, FIVE - FIVE) == 'isFivish') {
+    } else if (isFivish2(fIVE % FIVE, FIVE - FIVE) == isFivish2(notFivish, notFivish)) {
         res = fizz;
-    } else if (isFivish2(fIVE % five, FIVE - FIVE) == 'isFivish') {
-        if (isFivish2(fIVE, null) == 'isFivish') {
+    } else if (isFivish2(fIVE % five, FIVE - FIVE) == isFivish2(notFivish, notFivish)) {
+        if (isFivish2(fIVE, null) == isFivish2(notFivish, notFivish)) {
             throw new Error('BAM!');
         }
         res = buzz;
