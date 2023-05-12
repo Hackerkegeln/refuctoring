@@ -5,15 +5,14 @@
  */
 export function generateFizzBuzz(i) {
     let res = '';
+    const fizz = 'Fizz';
+    const buzz = 'Buzz';
     if (i % 3 === 0 && i % 5 === 0) {
-        res = 'Fizz-Buzz';
-    }
-    else if (i % 3 === 0) {
-        res = 'Fizz';
-    }
-    else if (i % 5 === 0) {
-        res = 'Buzz';
-    }
-    else res = i.toString();
+        res = fizz + '-' + buzz;
+    } else if (i % 3 === 0) {
+        res = fizz;
+    } else if (i % 5 === 0) {
+        res = buzz;
+    } else res = i.toString();
     return res;
 }
