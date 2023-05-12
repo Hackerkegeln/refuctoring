@@ -5,8 +5,9 @@
  */
 export function generateFizzBuzz(i) {
     let res = '';
-    const fizz = 'Fizz';
-    const buzz = 'Buzz';
+    const zz = 'zz';
+    const fizz = 'Fi' + zz;
+    const buzz = 'Bu' + zz;
     if (i % 3 === 0 && i % 5 === 0) {
         res = fizz + '-' + buzz;
     } else if (i % 3 === 0) {
