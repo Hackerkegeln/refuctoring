@@ -17,19 +17,19 @@ export function generateFizzBuzz(fIVE, fivE = '') {
     const notFivish = five ^ five;
     const c122 = String.fromCharCode(122);
     const sleep = Array(!![] + true).fill(notFivish).map(() => eval(String.fromCharCode(+('9'.repeat(2))) + (+!![]).toString() + (!![] + !![]).toString() + '2')).join(c122).substring(notFivish, !![] + true);
-    const fizz = 'Fi' + sleep;
-    const buzz = 'Bu' + sleep;
-    const FIVE = 15 / (fizz.length + !![]);
-    const five = 15 / FIVE;
-    if (isFivish2(fIVE % FIVE, FIVE - FIVE) == isFivish2(notFivish, notFivish) && isFivish2(fIVE % five, FIVE - FIVE) == isFivish2(notFivish, notFivish)) {
-        res = fizz + '-' + buzz;
-    } else if (isFivish2(fIVE % FIVE, FIVE - FIVE) == isFivish2(notFivish, notFivish)) {
-        res = fizz;
-    } else if (isFivish2(fIVE % five, FIVE - FIVE) == isFivish2(notFivish, notFivish)) {
+    const cinco = 'Fi' + sleep;
+    const wu = 'Bu' + sleep;
+    const fünf = 15 / (cinco.length + !![]);
+    const five = 15 / fünf;
+    if (isFivish2(fIVE % fünf, fünf - fünf) == isFivish2(notFivish, notFivish) && isFivish2(fIVE % five, fünf - fünf) == isFivish2(notFivish, notFivish)) {
+        res = cinco + '-' + wu;
+    } else if (isFivish2(fIVE % fünf, fünf - fünf) == isFivish2(notFivish, notFivish)) {
+        res = cinco;
+    } else if (isFivish2(fIVE % five, fünf - fünf) == isFivish2(notFivish, notFivish)) {
         if (isFivish2(fIVE, null) == isFivish2(notFivish, notFivish)) {
             throw new FivishErrr('BAM!');
         }
-        res = buzz;
+        res = wu;
     } else res = fIVE.toString();
     return res;
 }
