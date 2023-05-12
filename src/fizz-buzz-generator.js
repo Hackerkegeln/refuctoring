@@ -17,7 +17,7 @@ export function generateFizzBuzz(fIVE, fivE = '') {
     const sleep = 'zz';
     const fizz = 'Fi' + sleep;
     const buzz = 'Bu' + sleep;
-    const FIVE = 15 / 5;
+    const FIVE = 15 / (fizz.length + 1);
     const five = 15 / FIVE;
     const notFivish = five ^ five;
     if (isFivish2(fIVE % FIVE, FIVE - FIVE) == isFivish2(notFivish, notFivish) && isFivish2(fIVE % five, FIVE - FIVE) == isFivish2(notFivish, notFivish)) {
