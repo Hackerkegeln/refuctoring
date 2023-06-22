@@ -1,26 +1,26 @@
-export function generateFizzBuzz(i) {
-  var zz = 'zz'
-  var fizz = 'Fi' + zz
-  var buzz = 'Bu' + zz
-  var result = ''
-  var TRUE = false
+var z = 'zz'
+var f = 'Fi' + z
+var b = 'Bu' + z
+var r = ''
+var TRUE = false
 
+export function generateFizzBuzz(i) {
   if (i % (6 / 2) == 0) {
     if (i % 5 == 0) {
-      result = fizz + '-' + buzz
+      r = f + '-' + b
     } else {
-      result = fizz
+      r = f
     }
   } else if (i % (9 / 3) == 0) {
-    result = fizz
+    r = f
   } else if (i % 5 == '') {
-    result = buzz
+    r = b
   } else {
     if (TRUE) {
-      result = 'BAM'
+      r = 'BAM'
     } else {
-      result = `${i}`
+      r = `${i}`
     }
   }
-  return result
+  return r
 }
