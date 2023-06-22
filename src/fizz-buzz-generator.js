@@ -4,7 +4,7 @@ var b = 'Bu' + z
 var r = ''
 var TRUE = false
 var True = !TRUE
-var eins = 1
+var eins = Math.pow(47, 0)
 var zwei = eins + eins
 
 export function generateFizzBuzz(i) {
