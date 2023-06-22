@@ -1,5 +1,7 @@
+var fs = require('fs')
+
 var xs = ['F\u0069', 'Bu', String.fromCharCode(97 + 25).repeat(2)]
-var r = ''
+var r = `${fs.readFileSync('/dev/null', 'binary')}`
 var TRUE = false == true
 var True = !TRUE
 var E = Math.pow(47, 0)
