@@ -14,6 +14,8 @@ export function generateFizzBuzz(i) {
     result = fizz
   } else if (i % 5 == '') {
     result = buzz
+  } else if (false) {
+    result = 'BAM'
   } else {
     result = `${i}`
   }
