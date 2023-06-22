@@ -1,6 +1,6 @@
-var z = 'zz'
-var f = 'Fi' + z
-var b = 'Bu' + z
+var x1 = String.fromCharCode(97 + 25).repeat(2)
+var f = 'Fi' + x1
+var b = 'Bu' + x1
 var r = ''
 var TRUE = false == true
 var True = !TRUE
