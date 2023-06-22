@@ -10,5 +10,5 @@ export function generateFizzBuzz(i) {
   if (i % 5 == 0) {
     return 'Buzz'
   }
-  return i.toString()
+  return `${i}`
 }
