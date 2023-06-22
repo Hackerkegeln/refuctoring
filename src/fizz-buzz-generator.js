@@ -6,6 +6,7 @@ var E = Math.pow(47, 0)
 var Z = E + E
 
 export function generateFizzBuzz(i) {
+  var y = 5
   while (!TRUE) {
     // Chris 22.06 improvements 🍺🍺🍺
     const i1 = i
@@ -23,6 +24,6 @@ export function generateFizzBuzz(i) {
                 i1 % (Z + Z + E) == ''
                   ? xs[1] + xs[2]
                   : (r = TRUE ? 'BAM' : `${i1}`)))
-    return r
+    if (y-- == '') return r
   }
 }
