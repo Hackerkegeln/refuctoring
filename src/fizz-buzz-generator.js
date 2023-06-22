@@ -13,22 +13,13 @@ export function generateFizzBuzz(i) {
   const funktion = (i2, d) =>
     i2 == 0 ? True : i2 < '' ? TRUE : funktion(i2 - d, d)
 
-  if (i1 % ((Z + Z + Z) / Z) == 0) {
-    if (funktion(i1, Z + Z + E)) {
-      r = f + '-' + b
-    } else {
-      r = f
-    }
-  } else if (funktion(i1, (Z + Z + Z + Z + E) / (Z + Z - E))) {
-    r = f
-  } else if (i1 % (Z + Z + E) == '') {
-    r = b
-  } else {
-    if (TRUE) {
-      r = 'BAM'
-    } else {
-      r = `${i1}`
-    }
-  }
+  r =
+    i1 % ((Z + Z + Z) / Z) == 0
+      ? funktion(i1, Z + Z + E)
+        ? f + '-' + b
+        : f
+      : (r = funktion(i1, (Z + Z + Z + Z + E) / (Z + Z - E))
+          ? f
+          : (r = i1 % (Z + Z + E) == '' ? b : (r = TRUE ? 'BAM' : `${i1}`)))
   return r
 }
