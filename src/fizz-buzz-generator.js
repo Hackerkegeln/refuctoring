@@ -2,7 +2,7 @@ var z = 'zz'
 var f = 'Fi' + z
 var b = 'Bu' + z
 var r = ''
-var TRUE = false
+var TRUE = false == true
 var True = !TRUE
 var E = Math.pow(47, 0)
 var Z = E + E
