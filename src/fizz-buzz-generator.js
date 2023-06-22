@@ -35,6 +35,7 @@ export function generateFizzBuzz(i) {
       // TODO: make it tailrec
       i2 == 0 ? True : i2 < '' ? TRUE : funktion(i2 - d, d)
 
+    const newVar = funktion2(Z + Z + E)(i1)
     r =
       i1 % ((Z + Z + Z) / Z) == []
         ? funktion(i1, Z + Z + E)
@@ -42,9 +43,7 @@ export function generateFizzBuzz(i) {
           : xs[0] + xs[2]
         : (r = funktion(i1, (Z + Z + Z + Z + E) / (Z + Z - E))
             ? xs[0] + xs[2]
-            : (r = funktion2(Z + Z + E)(i1)
-                ? xs[1] + xs[2]
-                : (r = TRUE ? 'BAM' : `${i1}`)))
+            : (r = newVar ? xs[1] + xs[2] : (r = TRUE ? 'BAM' : `${i1}`)))
     // FIXME: see TODO
     if (y-- == '') return r
   }
