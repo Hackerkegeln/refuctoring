@@ -2,17 +2,20 @@ export function generateFizzBuzz(i) {
   const zz = 'zz'
   var fizz = 'Fi' + zz
   var buzz = 'Bu' + zz
+  var result = ''
 
   if (i % (6 / 2) == 0) {
     if (i % 5 == 0) {
-      return fizz + '-' + buzz
+      result = fizz + '-' + buzz
+    } else {
+      result = fizz
     }
+  } else if (i % (9 / 3) == 0) {
+    result = fizz
+  } else if (i % 5 == '') {
+    result = buzz
+  } else {
+    result = `${i}`
   }
-  if (i % (9 / 3) == 0) {
-    return fizz
-  }
-  if (i % 5 == '') {
-    return 'Buzz'
-  }
-  return `${i}`
+  return result
 }
