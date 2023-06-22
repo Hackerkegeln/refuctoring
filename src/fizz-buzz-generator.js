@@ -22,6 +22,7 @@ var TRUE = false == true
 var True = !TRUE
 var E = Math.pow(47, 0)
 var Z = E + E
+// TODO: refactor this
 
 export function generateFizzBuzz(i) {
   var y = 5
@@ -42,6 +43,7 @@ export function generateFizzBuzz(i) {
                 i1 % (Z + Z + E) == ''
                   ? xs[1] + xs[2]
                   : (r = TRUE ? 'BAM' : `${i1}`)))
+    // FIXME: see TODO
     if (y-- == '') return r
   }
 }
