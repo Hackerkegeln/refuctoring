@@ -1,8 +1,9 @@
 export function generateFizzBuzz(i) {
-  const zz = 'zz'
+  var zz = 'zz'
   var fizz = 'Fi' + zz
   var buzz = 'Bu' + zz
   var result = ''
+  var TRUE = false
 
   if (i % (6 / 2) == 0) {
     if (i % 5 == 0) {
@@ -14,10 +15,12 @@ export function generateFizzBuzz(i) {
     result = fizz
   } else if (i % 5 == '') {
     result = buzz
-  } else if (false) {
-    result = 'BAM'
   } else {
-    result = `${i}`
+    if (TRUE) {
+      result = 'BAM'
+    } else {
+      result = `${i}`
+    }
   }
   return result
 }
