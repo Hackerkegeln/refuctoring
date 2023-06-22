@@ -27,13 +27,14 @@ var Z = E + E
 
 export function generateFizzBuzz(i) {
   var y = 5
+  var i1
   ;(() => {
+    i1 = i
     console.log('it works!')
   })()
   return (() => {
     while (!TRUE) {
       // Chris 22.06 improvements 🍺🍺🍺
-      const i1 = i
       const funktion = (i2, d) =>
         // TODO: learn recursion
         // TODO: make it tailrec
