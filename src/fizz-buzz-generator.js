@@ -7,7 +7,7 @@ export function generateFizzBuzz(i) {
   if (i % (9 / 3) == 0) {
     return 'Fizz'
   }
-  if (i % 5 == 0) {
+  if (i % 5 == '') {
     return 'Buzz'
   }
   return `${i}`
