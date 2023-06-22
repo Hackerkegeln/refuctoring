@@ -1,6 +1,4 @@
-var x1 = String.fromCharCode(97 + 25).repeat(2)
-var f = 'Fi' + x1
-var b = 'Bu' + x1
+var chars = ['Fi', 'Bu', String.fromCharCode(97 + 25).repeat(2)]
 var r = ''
 var TRUE = false == true
 var True = !TRUE
@@ -16,10 +14,13 @@ export function generateFizzBuzz(i) {
   r =
     i1 % ((Z + Z + Z) / Z) == []
       ? funktion(i1, Z + Z + E)
-        ? f + '-' + b
-        : f
+        ? chars[0] + chars[2] + '-' + chars[1] + chars[2]
+        : chars[0] + chars[2]
       : (r = funktion(i1, (Z + Z + Z + Z + E) / (Z + Z - E))
-          ? f
-          : (r = i1 % (Z + Z + E) == '' ? b : (r = TRUE ? 'BAM' : `${i1}`)))
+          ? chars[0] + chars[2]
+          : (r =
+              i1 % (Z + Z + E) == ''
+                ? chars[1] + chars[2]
+                : (r = TRUE ? 'BAM' : `${i1}`)))
   return r
 }
