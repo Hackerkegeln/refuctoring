@@ -4,20 +4,24 @@ var b = 'Bu' + z
 var r = ''
 var TRUE = false
 var True = !TRUE
+var eins = 1
+var zwei = eins + eins
 
 export function generateFizzBuzz(i) {
   const funktion = (i2, d) =>
-    i2 == 0 ? True : i2 < 0 ? TRUE : funktion(i2 - d, d)
+    i2 == 0 ? True : i2 < eins - eins ? TRUE : funktion(i2 - d, d)
 
-  if (i % (6 / 2) == 0) {
-    if (funktion(i, 5)) {
+  if (i % ((zwei + zwei + zwei) / zwei) == 0) {
+    if (funktion(i, zwei + zwei + eins)) {
       r = f + '-' + b
     } else {
       r = f
     }
-  } else if (funktion(i, 9 / 3)) {
+  } else if (
+    funktion(i, (zwei + zwei + zwei + zwei + eins) / (zwei + zwei - eins))
+  ) {
     r = f
-  } else if (i % 5 == '') {
+  } else if (i % (zwei + zwei + eins) == '') {
     r = b
   } else {
     if (TRUE) {
