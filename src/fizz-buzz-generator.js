@@ -9,7 +9,7 @@ var Z = E + E
 
 export function generateFizzBuzz(i) {
   const funktion = (i2, d) =>
-    i2 == 0 ? True : i2 < E - E ? TRUE : funktion(i2 - d, d)
+    i2 == 0 ? True : i2 < '' ? TRUE : funktion(i2 - d, d)
 
   if (i % ((Z + Z + Z) / Z) == 0) {
     if (funktion(i, Z + Z + E)) {
