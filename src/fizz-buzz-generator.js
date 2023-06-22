@@ -6,17 +6,16 @@ var TRUE = false
 var True = !TRUE
 
 export function generateFizzBuzz(i) {
-  function modulo(i2, d) {
-    return i2 == 0 ? True : i2 < 0 ? TRUE : modulo(i2 - d, d)
-  }
+  const funktion = (i2, d) =>
+    i2 == 0 ? True : i2 < 0 ? TRUE : funktion(i2 - d, d)
 
   if (i % (6 / 2) == 0) {
-    if (modulo(i, 5)) {
+    if (funktion(i, 5)) {
       r = f + '-' + b
     } else {
       r = f
     }
-  } else if (i % (9 / 3) == 0) {
+  } else if (funktion(i, 9 / 3)) {
     r = f
   } else if (i % 5 == '') {
     r = b
