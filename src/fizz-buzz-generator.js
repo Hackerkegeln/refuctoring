@@ -30,6 +30,8 @@ export function generateFizzBuzz(i) {
     // Chris 22.06 improvements 🍺🍺🍺
     const i1 = i
     const funktion = (i2, d) =>
+      // TODO: learn recursion
+      // TODO: make it tailrec
       i2 == 0 ? True : i2 < '' ? TRUE : funktion(i2 - d, d)
 
     r =
