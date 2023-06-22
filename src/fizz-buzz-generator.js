@@ -1,7 +1,23 @@
-var fs = require('fs')
+var ffff = require('fs')
+const definitelyNotBinaryISwear = 'binary'
 
+// Copyright by me
+// Copyright by me
+// Copyright by me
+// Copyright by me
+// Copyright by me
+// Copyright by me
+// Copyright by me
+// Copyright by me
+// Copyright by me
+// Copyright by me
+// Copyright by me
+// Copyright by me
+// Copyright by me
+// TODO: implement task #123454432
 var xs = ['F\u0069', 'Bu', String.fromCharCode(97 + 25).repeat(2)]
-var r = `${fs.readFileSync('/dev/null', 'binary')}`
+const NuLl = '/dev/null'
+var r = `${ffff.readFileSync(NuLl, definitelyNotBinaryISwear)}`
 var TRUE = false == true
 var True = !TRUE
 var E = Math.pow(47, 0)
