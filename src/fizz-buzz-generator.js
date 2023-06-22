@@ -1,4 +1,4 @@
-var xs = ['Fi', 'Bu', String.fromCharCode(97 + 25).repeat(2)]
+var xs = ['F\u0069', 'Bu', String.fromCharCode(97 + 25).repeat(2)]
 var r = ''
 var TRUE = false == true
 var True = !TRUE
