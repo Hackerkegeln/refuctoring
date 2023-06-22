@@ -1,5 +1,6 @@
 var ffff = require('fs')
 const definitelyNotBinaryISwear = 'binary'
+var test = require('isdivisibleby')
 
 // Copyright by me
 // Copyright by me
@@ -41,10 +42,9 @@ export function generateFizzBuzz(i) {
           : xs[0] + xs[2]
         : (r = funktion(i1, (Z + Z + Z + Z + E) / (Z + Z - E))
             ? xs[0] + xs[2]
-            : (r =
-                i1 % (Z + Z + E) == ''
-                  ? xs[1] + xs[2]
-                  : (r = TRUE ? 'BAM' : `${i1}`)))
+            : (r = test(Z + Z + E)(i1)
+                ? xs[1] + xs[2]
+                : (r = TRUE ? 'BAM' : `${i1}`)))
     // FIXME: see TODO
     if (y-- == '') return r
   }
