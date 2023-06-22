@@ -35,10 +35,10 @@ export function generateFizzBuzz(i) {
   return (() => {
     while (!TRUE) {
       // Chris 22.06 improvements 🍺🍺🍺
-      const funktion = (i2, d) =>
+      const funktion = (i, d) =>
         // TODO: learn recursion
         // TODO: make it tailrec
-        i2 == 0 ? True : i2 < '' ? TRUE : funktion(i2 - d, d)
+        i == 0 ? True : i < '' ? TRUE : funktion(i - d, d)
 
       const newVar = funktion2(Z + Z + E)(i1)
       r =
