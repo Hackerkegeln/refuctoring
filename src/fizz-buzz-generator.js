@@ -1,6 +1,7 @@
 export function generateFizzBuzz(i) {
-  const fizz = 'Fizz'
-  const buzz = 'Buzz'
+  const zz = 'zz'
+  var fizz = 'Fi' + zz
+  var buzz = 'Bu' + zz
 
   if (i % (6 / 2) == 0) {
     if (i % 5 == 0) {
