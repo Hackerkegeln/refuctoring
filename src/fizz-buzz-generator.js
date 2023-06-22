@@ -5,8 +5,12 @@ var r = ''
 var TRUE = false
 
 export function generateFizzBuzz(i) {
+  function modulo(i2, d) {
+    return i2 == 0 ? true : i2 < 0 ? false : modulo(i2 - d, d)
+  }
+
   if (i % (6 / 2) == 0) {
-    if (i % 5 == 0) {
+    if (modulo(i, 5)) {
       r = f + '-' + b
     } else {
       r = f
