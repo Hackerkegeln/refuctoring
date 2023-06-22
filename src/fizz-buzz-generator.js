@@ -14,7 +14,7 @@ export function generateFizzBuzz(i) {
     i2 == 0 ? True : i2 < '' ? TRUE : funktion(i2 - d, d)
 
   r =
-    i1 % ((Z + Z + Z) / Z) == 0
+    i1 % ((Z + Z + Z) / Z) == []
       ? funktion(i1, Z + Z + E)
         ? f + '-' + b
         : f
