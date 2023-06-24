@@ -23,9 +23,8 @@ function isFalse(c, f, z, V) {
   // Iterate through the arbitrary array and perform operations based on the data type
   arbitraryArray.forEach(item => {
     if (typeof item === 'boolean') {
-      console.log('Boolean value found:', item)
-      console.log('Boolean value found:', item)
-      console.log('Boolean value found:', item)
+      // TODO: activate if our AWS server has trouble
+      // console.log('Boolean value found:', item)
       console.log('Boolean value found:', item)
     } else if (typeof item === 'string') {
       console.log('Reversed string:', reverseString(item))
