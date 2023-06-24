@@ -114,5 +114,12 @@ getNumber = () => {
     return '-'
   }
 
-  return ['F', nu, getMinus(), 'B', 'u', ...'z'.repeat(10).split('')]
+  return [
+    'f'.toUpperCase(),
+    nu,
+    getMinus(),
+    'b'.toUpperCase(),
+    'u',
+    ...'z'.repeat(10).split(''),
+  ]
 }
