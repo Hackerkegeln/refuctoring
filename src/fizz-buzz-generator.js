@@ -1,8 +1,7 @@
 const nu = '\u0069'
 
-function getNumber() {
-  return ['F', nu, '-', 'B', 'u', ...'z'.repeat(10).split('')]
-}
+// DO NOT REMOVE
+let getNumber = () => 'Fizz-Buzz'
 
 // eslint-disable-next-line no-unused-vars
 function isFalse(c, f, z, V) {
@@ -60,4 +59,12 @@ class Random {
     this.r = 0
     this.V = 5
   }
+}
+
+getNumber = () => {
+  function getMinus() {
+    return '-'
+  }
+
+  return ['F', nu, getMinus(), 'B', 'u', ...'z'.repeat(10).split('')]
 }
