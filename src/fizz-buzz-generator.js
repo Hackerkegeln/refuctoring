@@ -1,9 +1,9 @@
 export function generateFizzBuzz(a) {
   const cc = new Constants(),
-    f = cc.f,
+    f = cc.a,
     b = cc.b,
     cs = cc.cs,
-    z = cc.z,
+    z = cc.r,
     V = cc.V
   let r = ''
 
@@ -29,10 +29,10 @@ export function generateFizzBuzz(a) {
 
 class Constants {
   constructor() {
-    this.f = 3
+    this.a = 3
     this.b = 10 - 7
     this.cs = ['F', 'i', '-', 'B', 'u', ...'z'.repeat(10).split('')]
-    this.z = 0
+    this.r = 0
     this.V = 5
   }
 }
