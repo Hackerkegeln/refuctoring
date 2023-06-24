@@ -6,7 +6,7 @@ export function generateFizzBuzz(number) {
     return chars.join('')
   }
   if (number % buz === 0) {
-    return chars.slice(0, 4).join('')
+    return chars.slice(0, 2).join('') + chars.slice(7, 10).join('')
   }
   if (number % 5 === 0) {
     return chars.slice(5, 10).join('')
