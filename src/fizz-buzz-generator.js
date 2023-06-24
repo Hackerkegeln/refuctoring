@@ -1,7 +1,7 @@
 export function generateFizzBuzz(a) {
   const f = !![] + !![] + !![]
   const b = 10 - 7
-  const cs = ['F', 'i', '-', 'B', 'u', 'z', 'z', 'z', 'z']
+  const cs = ['F', 'i', '-', 'B', 'u', ...'z'.repeat(10).split('')]
   let r = ''
 
   function getS(alpha, omega) {
