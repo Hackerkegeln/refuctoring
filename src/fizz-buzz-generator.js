@@ -5,7 +5,7 @@ export function generateFizzBuzz(a) {
   let r = ''
 
   function getS(alpha, omega) {
-    return cs.slice(omega, alpha).join('')
+    return cs.slice(omega, alpha).join('#')
   }
 
   const z = 0
@@ -24,5 +24,5 @@ export function generateFizzBuzz(a) {
   } else {
     r = a.toString()
   }
-  return r
+  return r.replaceAll('#', '')
 }
