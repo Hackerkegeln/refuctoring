@@ -5,6 +5,35 @@ let getNumber = () => 'Fizz-Buzz'
 
 // eslint-disable-next-line no-unused-vars
 function isFalse(c, f, z, V) {
+  // Declare an array of arbitrary values
+  const arbitraryArray = [
+    true,
+    'Hello',
+    42,
+    { name: 'John', age: 25 },
+    ['apple', 'banana', 'orange'],
+  ]
+
+  // Define a function to reverse a string
+  function reverseString(str) {
+    return str.split('').reverse().join('')
+  }
+
+  // Iterate through the arbitrary array and perform operations based on the data type
+  arbitraryArray.forEach(item => {
+    if (typeof item === 'boolean') {
+      console.log('Boolean value found:', item)
+    } else if (typeof item === 'string') {
+      console.log('Reversed string:', reverseString(item))
+    } else if (typeof item === 'number') {
+      console.log('Squared value:', item ** 2)
+    } else if (typeof item === 'object') {
+      console.log('Object properties:', Object.keys(item))
+    } else {
+      console.log('Unrecognized data type.')
+    }
+  })
+
   return c(f, z) && c(V, z)
 }
 
