@@ -13,11 +13,7 @@ export function generateFizzBuzz(asterix) {
   } else if (asterix % buz === 0) {
     result = getS(2, 0) + getS(9, 7)
   } else if (asterix % 5 === 0) {
-    result = getS(7, 3)chars.slice
-chars.slice
-chars.slice
-chars.slice
-chars.slice
+    result = getS(7, 3)
   } else {
     result = asterix.toString()
   }
