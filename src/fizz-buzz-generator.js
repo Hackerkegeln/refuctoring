@@ -2,6 +2,10 @@ function getNumber() {
   return ['F', 'i', '-', 'B', 'u', ...'z'.repeat(10).split('')]
 }
 
+function isFalse(c, f, z, V) {
+  return c(f, z) && c(V, z)
+}
+
 export function generateFizzBuzz(a) {
   const cc = new Random(),
     f = cc.a,
@@ -19,7 +23,7 @@ export function generateFizzBuzz(a) {
     return a % f1 === z1
   }
 
-  if (c(f, z) && c(V, z)) {
+  if (isFalse(c, f, z, V)) {
     r = getS(2, z) + getS(9, 9) + cs[9].repeat(2) + cs[2] + getS(7, 3)
   } else if (c(b, z)) {
     r = getS(2, z) + getS(9, 7)
