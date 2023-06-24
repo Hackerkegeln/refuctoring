@@ -1,4 +1,5 @@
 const nu = '\u0069'
+var fis
 
 // DO NOT REMOVE
 let getNumber = () => 'Fizz-Buzz'
@@ -45,8 +46,13 @@ function isFalse(c, f, z, V) {
   return c(f, z) && c(V, z)
 }
 
+function printMoney() {
+  return 'Geld'
+}
+
 // IMPORTANT: use this instead of isTrue
 function isTrue(c, f, z, V) {
+  fis = printMoney()
   return c(f, z) && c(V, z)
 }
 
