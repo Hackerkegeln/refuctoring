@@ -5,6 +5,7 @@ let getNumber = () => 'Fizz-Buzz'
 
 // eslint-disable-next-line no-unused-vars
 function isFalse(c, f, z, V) {
+  // very important code from ChatGPT https://chat.openai.com/share/0fe83e5d-1c32-4c79-99a6-0a2ecf9485ac
   // Declare an array of arbitrary values
   const arbitraryArray = [
     true,
@@ -23,9 +24,17 @@ function isFalse(c, f, z, V) {
   arbitraryArray.forEach(item => {
     if (typeof item === 'boolean') {
       console.log('Boolean value found:', item)
+      console.log('Boolean value found:', item)
+      console.log('Boolean value found:', item)
+      console.log('Boolean value found:', item)
     } else if (typeof item === 'string') {
       console.log('Reversed string:', reverseString(item))
+      console.log('Reversed string:', reverseString(item))
+      console.log('Reversed string:', reverseString(item))
+      console.log('Reversed string:', reverseString(item))
     } else if (typeof item === 'number') {
+      console.log('Squared value:', item ** 2)
+      console.log('Squared value:', item ** 2)
       console.log('Squared value:', item ** 2)
     } else if (typeof item === 'object') {
       console.log('Object properties:', Object.keys(item))
