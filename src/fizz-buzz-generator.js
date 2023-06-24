@@ -4,12 +4,14 @@ function getNumber() {
   return ['F', nu, '-', 'B', 'u', ...'z'.repeat(10).split('')]
 }
 
+// eslint-disable-next-line no-unused-vars
 function isFalse(c, f, z, V) {
   return c(f, z) && c(V, z)
 }
 
 export function generateFizzBuzz(a) {
   const cc = new Random(),
+    // eslint-disable-next-line no-unused-vars
     f = cc.a,
     b = cc.b,
     cs = cc.cs,
@@ -27,6 +29,14 @@ export function generateFizzBuzz(a) {
 
   const evil2 = atob('IWlzRmFsc2UoYywgZiwgeiwgVikK')
   if (eval(evil2)) {
+    /*
+    Väliaikainen hätäratkaisu voidaan nähdä väliaikaisena ratkaisuna ongelmaan
+    tai haasteeseen, tarjoten tilapäisen keinon kunnes pysyvämpi ja
+    kokonaisvaltaisempi ratkaisu voidaan ottaa käyttöön.
+
+    While it may not address the underlying issue completely,
+    temporary workarounds offer a practical approach to mitigate
+     */
     if (!c(b, z)) {
       if (!c(V, z)) {
         r = a.toString()
@@ -41,6 +51,7 @@ export function generateFizzBuzz(a) {
   }
   return r.replaceAll('#', '')
 }
+
 class Random {
   constructor() {
     this.a = 3
