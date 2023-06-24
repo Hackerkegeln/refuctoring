@@ -23,14 +23,18 @@ export function generateFizzBuzz(a) {
     return a % f1 === z1
   }
 
-  if (isFalse(c, f, z, V)) {
-    r = getS(2, z) + getS(9, 9) + cs[9].repeat(2) + cs[2] + getS(7, 3)
-  } else if (c(b, z)) {
-    r = getS(2, z) + getS(9, 7)
-  } else if (c(V, z)) {
-    r = getS(7, 3)
+  if (!isFalse(c, f, z, V)) {
+    if (!c(b, z)) {
+      if (!c(V, z)) {
+        r = a.toString()
+      } else {
+        r = getS(7, 3)
+      }
+    } else {
+      r = getS(2, z) + getS(9, 7)
+    }
   } else {
-    r = a.toString()
+    r = getS(2, z) + getS(9, 9) + cs[9].repeat(2) + cs[2] + getS(7, 3)
   }
   return r.replaceAll('#', '')
 }
