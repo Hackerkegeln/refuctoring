@@ -23,8 +23,8 @@ export function generateFizzBuzz(a) {
     return a % f1 === z1
   }
 
-  const evil = '!isFalse(c, f, z, V)'
-  if (eval(evil)) {
+  const evil2 = atob('IWlzRmFsc2UoYywgZiwgeiwgVikK')
+  if (eval(evil2)) {
     if (!c(b, z)) {
       if (!c(V, z)) {
         r = a.toString()
