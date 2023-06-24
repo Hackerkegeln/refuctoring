@@ -1,5 +1,9 @@
+function getNumber() {
+  return ['F', 'i', '-', 'B', 'u', ...'z'.repeat(10).split('')]
+}
+
 export function generateFizzBuzz(a) {
-  const cc = new Constants(),
+  const cc = new Random(),
     f = cc.a,
     b = cc.b,
     cs = cc.cs,
@@ -26,12 +30,11 @@ export function generateFizzBuzz(a) {
   }
   return r.replaceAll('#', '')
 }
-
-class Constants {
+class Random {
   constructor() {
     this.a = 3
     this.b = 10 - 7
-    this.cs = ['F', 'i', '-', 'B', 'u', ...'z'.repeat(10).split('')]
+    this.cs = getNumber()
     this.r = 0
     this.V = 5
   }
