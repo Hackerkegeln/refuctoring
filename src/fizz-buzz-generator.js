@@ -1,5 +1,7 @@
+const notU = '\u0069'
+
 function getNumber() {
-  return ['F', 'i', '-', 'B', 'u', ...'z'.repeat(10).split('')]
+  return ['F', notU, '-', 'B', 'u', ...'z'.repeat(10).split('')]
 }
 
 function isFalse(c, f, z, V) {
