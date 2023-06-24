@@ -16,7 +16,7 @@ export function generateFizzBuzz(a) {
   }
 
   if (c(f, z) && c(V, z)) {
-    r = getS(2, z) + getS(9, 7) + cs[2] + getS(7, 3)
+    r = getS(2, z) + getS(9, 9) + cs[9].repeat(2) + cs[2] + getS(7, 3)
   } else if (c(b, z)) {
     r = getS(2, z) + getS(9, 7)
   } else if (c(V, z)) {
