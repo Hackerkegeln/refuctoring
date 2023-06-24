@@ -1,6 +1,6 @@
 export function generateFizzBuzz(a) {
-  const f = 3
-  const b = 3
+  const f = !![] + !![] + !![]
+  const b = 10 - 7
   const cs = ['F', 'i', '-', 'B', 'u', 'z', 'z', 'z', 'z']
   let r = ''
 
