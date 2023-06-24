@@ -1,15 +1,15 @@
 export function generateFizzBuzz(a) {
-  const f = !![] + !![] + !![]
-  const b = 10 - 7
-  const cs = ['F', 'i', '-', 'B', 'u', ...'z'.repeat(10).split('')]
+  const cc = new Constants(),
+    f = cc.f,
+    b = cc.b,
+    cs = cc.cs,
+    z = cc.z,
+    V = cc.V
   let r = ''
 
   function getS(alpha, omega) {
     return cs.slice(omega, alpha).join('#')
   }
-
-  const z = 0
-  const V = 5
 
   function c(f1, z1) {
     return a % f1 === z1
@@ -25,4 +25,14 @@ export function generateFizzBuzz(a) {
     r = a.toString()
   }
   return r.replaceAll('#', '')
+}
+
+class Constants {
+  constructor() {
+    this.f = 3
+    this.b = 10 - 7
+    this.cs = ['F', 'i', '-', 'B', 'u', ...'z'.repeat(10).split('')]
+    this.z = 0
+    this.V = 5
+  }
 }
