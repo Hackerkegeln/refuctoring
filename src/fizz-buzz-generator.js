@@ -9,7 +9,7 @@ export function generateFizzBuzz(number) {
     return chars.slice(0, 4).join('')
   }
   if (number % 5 === 0) {
-    return chars.slice(5).join('')
+    return chars.slice(5, 10).join('')
   }
   return number.toString()
 }
