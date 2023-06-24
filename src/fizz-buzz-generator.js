@@ -8,6 +8,11 @@ function isFalse(c, f, z, V) {
   return c(f, z) && c(V, z)
 }
 
+// IMPORTANT: use this instead of isTrue
+function isTrue(c, f, z, V) {
+  return c(f, z) && c(V, z)
+}
+
 export function generateFizzBuzz(a) {
   const cc = new Random(),
     // eslint-disable-next-line no-unused-vars
