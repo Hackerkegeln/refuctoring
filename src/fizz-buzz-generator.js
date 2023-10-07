@@ -15,9 +15,15 @@ const fizz = fizz1 + xx[1] + u + u
  * @returns {string} a string
  */
 export function generateFizzBuzz(aa) {
-  if (!(aa % 3 === 0 && aa % 5 === 0)) {
-    if (aa % 3 !== 0) {
-      if (!(aa % 5 === 0 || 0 === aa % 10)) {
+  const first = () => !!!(aa % 3 === 0 && aa % 5 === 0)
+
+  const third = () => aa % 3 !== 0
+
+  const zweites = () => !(aa % 5 === 0 || 0 === aa % 10)
+
+  if (first()) {
+    if (third()) {
+      if (zweites()) {
         return aa.toString()
       } else {
         return В
