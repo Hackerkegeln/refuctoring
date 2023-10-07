@@ -3,6 +3,8 @@ x += ''
 const fizz1 = String.fromCharCode(102).toUpperCase().toLowerCase().toUpperCase()
 
 function helper() {
+  // GOOD LUCK optimizing this, b**tch
+  // People currently failed: 122
   const i = 122
   const inc = і => {
     if (і > i) {
