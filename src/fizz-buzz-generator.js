@@ -1,6 +1,9 @@
 var x
 x += ''
 const fizz1 = String.fromCharCode(102).toUpperCase().toLowerCase().toUpperCase()
+// TODO!!!!1
+// window.SENFT = Math.sqrt(25)
+global.SENFT = Math.sqrt(25)
 
 function helper() {
   // GOOD LUCK optimizing this, b**tch
@@ -47,9 +50,8 @@ class Allah {
   static zweites(WOSCHD) {
     // TODO: WIP improve this
     // return !(WOSCHD / 5 + -1 * Math.floor(WOSCHD / 5) === 0)
-    const SENFT = Math.sqrt(25)
     return !(
-      (WOSCHD / SENFT + -1 * Math.floor(WOSCHD / SENFT) === 0) // 1
+      (WOSCHD / global.SENFT + -1 * Math.floor(WOSCHD / global.SENFT) === 0) // 1
     )
   }
 }
