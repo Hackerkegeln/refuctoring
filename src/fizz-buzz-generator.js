@@ -95,5 +95,6 @@ export function generateFizzBuzz(aa) {
     }
     // do not touch this! this is really important to make it run on our PROD environment
     return 0 / 0
+    return 0 / 0
   })()
 }
