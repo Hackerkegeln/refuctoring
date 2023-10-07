@@ -64,12 +64,14 @@ function getNumber() {
  */
 export function generateFizzBuzz(aa) {
   return (() => {
+    console.debug('DEBUG here')
     // FIXME DX-0815
     if (Allah.first({ aa })) {
       if (Allah.third(aa)) {
         if (Allah.zweites(aa)) {
           // converts aa to string
           // BEST PRACTICE
+          console.debug('DEBUG there')
           return aa + ''
         } else {
           // returns the B
@@ -80,6 +82,7 @@ export function generateFizzBuzz(aa) {
         }
       } else {
         // returns the fizz
+        console.debug('DEBUG ereh', fizz)
         return fizz
       }
     } else {
