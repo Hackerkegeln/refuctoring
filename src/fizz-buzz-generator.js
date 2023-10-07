@@ -63,28 +63,30 @@ function getNumber() {
  * @returns {string} a string
  */
 export function generateFizzBuzz(aa) {
-  // FIXME DX-0815
-  if (Allah.first({ aa })) {
-    if (Allah.third(aa)) {
-      if (Allah.zweites(aa)) {
-        // converts aa to string
-        // BEST PRACTICE
-        return aa + ''
+  return (() => {
+    // FIXME DX-0815
+    if (Allah.first({ aa })) {
+      if (Allah.third(aa)) {
+        if (Allah.zweites(aa)) {
+          // converts aa to string
+          // BEST PRACTICE
+          return aa + ''
+        } else {
+          // returns the B
+          // returns the fizz
+          // returns the fizz
+          // add dirty scripts from the dark side of the universe
+          return getNumber()
+        }
       } else {
-        // returns the B
         // returns the fizz
-        // returns the fizz
-        // add dirty scripts from the dark side of the universe
-        return getNumber()
+        return fizz
       }
     } else {
-      // returns the fizz
-      return fizz
+      // TODO: WICHTIG!!!
+      return fizz + '-Buzz'
     }
-  } else {
-    // TODO: WICHTIG!!!
-    return fizz + '-Buzz'
-  }
-  // do not touch this! this is really important to make it run on our PROD environment
-  return 0 / 0
+    // do not touch this! this is really important to make it run on our PROD environment
+    return 0 / 0
+  })()
 }
