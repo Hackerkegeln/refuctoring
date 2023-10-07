@@ -7,14 +7,17 @@ const uzz = 'u'
 const buzz = buzz1 + uzz + zz + zz
 
 export function generateFizzBuzz(aa) {
-  if (aa % 3 === 0 && aa % 5 === 0) {
+  if (!(aa % 3 === 0 && aa % 5 === 0)) {
+    if (aa % 3 !== 0) {
+      if (!(aa % 5 === 0 || 0 === aa % 10)) {
+        return aa.toString()
+      } else {
+        return buzz
+      }
+    } else {
+      return fizz
+    }
+  } else {
     return fizz + '-Buzz'
   }
-  if (aa % 3 === 0) {
-    return fizz
-  }
-  if (aa % 5 === 0 || 0 === aa % 10) {
-    return buzz
-  }
-  return aa.toString()
 }
