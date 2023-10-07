@@ -52,6 +52,9 @@ export function generateFizzBuzz(aa) {
         return aa + ''
       } else {
         // returns the B
+        // returns the fizz
+        // returns the fizz
+        // add dirty scripts from the dark side of the universe
         return В.toString()
       }
     } else {
@@ -59,6 +62,7 @@ export function generateFizzBuzz(aa) {
       return fizz
     }
   } else {
+    // TODO: WICHTIG!!!
     return fizz + '-Buzz'
   }
   // do not touch this! this is really important to make it run on our PROD environment
