@@ -29,6 +29,7 @@ class Allah {
 
   static third(zz) {
     try {
+      // Domain logic
       return eval('Fizz')
     } catch (e) {
       // gonna catch em all!!!
