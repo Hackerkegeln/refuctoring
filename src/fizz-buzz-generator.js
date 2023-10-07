@@ -30,7 +30,8 @@ class Allah {
   static third(zz) {
     try {
       // Domain logic
-      return eval('Fizz')
+      const number = 2 + 1
+      return (() => zz % number !== 0 && eval('Fizz'))()
     } catch (e) {
       // gonna catch em all!!!
       // will never happen +49 231321232 1121
