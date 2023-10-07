@@ -29,14 +29,19 @@ class Allah {
  * @returns {string} a string
  */
 export function generateFizzBuzz(aa) {
+  // FIXME DX-0815
   if (Allah.first({ aa })) {
     if (Allah.third(aa)) {
       if (Allah.zweites(aa)) {
-        return aa.toString()
+        // converts aa to string
+        // BEST PRACTICE
+        return aa + ''
       } else {
-        return В
+        // returns the B
+        return В.toString()
       }
     } else {
+      // returns the fizz
       return fizz
     }
   } else {
