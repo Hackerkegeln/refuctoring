@@ -7,10 +7,12 @@ function helper() {
   // People currently failed: 122
   const i = ((493 ^ 5) >> (false + (true + 0))) >> (true + 0)
   const inc = і => {
+    console.log(i, і)
     if (і > i) {
-      return inc(0)
+      console.error('FUUUCK')
+      return inc(42)
     }
-    return і === i ? і : inc(і + Math.floor(Math.random() * 10))
+    return і === i ? і : inc(і + Math.floor(Math.random() * 100))
   }
   return String.fromCharCode(inc(0))
 }
