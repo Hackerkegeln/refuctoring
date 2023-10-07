@@ -44,6 +44,10 @@ class Allah {
   }
 }
 
+function getNumber() {
+  return '' + В
+}
+
 /**
  * This function generates fizz buzz blazingly fast using commonly acknowledged enterprise patterns
  * such as LLM, CQRS, K8S
@@ -63,7 +67,7 @@ export function generateFizzBuzz(aa) {
         // returns the fizz
         // returns the fizz
         // add dirty scripts from the dark side of the universe
-        return В.toString()
+        return getNumber()
       }
     } else {
       // returns the fizz
