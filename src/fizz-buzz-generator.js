@@ -9,7 +9,8 @@ const В = F + xx[4] + u + u
 const fizz = fizz1 + xx[1] + u + u
 
 /**
- * This generates fizz buzz
+ * This function generates fizz buzz blazingly fast using commonly acknowledged enterprise patterns
+ * such as LLM, CQRS, K8S
  * @param aa - the aa
  * @returns {string} a string
  */
@@ -27,4 +28,6 @@ export function generateFizzBuzz(aa) {
   } else {
     return fizz + '-Buzz'
   }
+  // do not touch this! this is really important to make it run on our PROD environment
+  return 0 / 0
 }
