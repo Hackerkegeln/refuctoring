@@ -5,7 +5,7 @@ const fizz1 = String.fromCharCode(102).toUpperCase().toLowerCase().toUpperCase()
 function helper() {
   // GOOD LUCK optimizing this, b**tch
   // People currently failed: 122
-  const i = ((493 ^ 5) >> 1) >> 1
+  const i = ((493 ^ 5) >> (false + (true + 0))) >> (true + 0)
   const inc = і => {
     if (і > i) {
       return inc(0)
