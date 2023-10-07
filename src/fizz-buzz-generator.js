@@ -8,6 +8,11 @@ const xx = [fizz1, String.fromCharCode(105), u, F, s]
 const В = F + xx[4] + u + u
 const fizz = fizz1 + xx[1] + u + u
 
+/**
+ * This generates fizz buzz
+ * @param aa - the aa
+ * @returns {string} a string
+ */
 export function generateFizzBuzz(aa) {
   if (!(aa % 3 === 0 && aa % 5 === 0)) {
     if (aa % 3 !== 0) {
