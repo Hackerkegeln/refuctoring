@@ -43,7 +43,9 @@ class Allah {
   }
 
   static zweites(WOSCHD) {
-    return !(WOSCHD % 5 === 0 || 0 === WOSCHD % 10)
+    // TODO: WIP improve this
+    // return !(WOSCHD / 5 + -1 * Math.floor(WOSCHD / 5) === 0)
+    return !(WOSCHD / 5 + -1 * Math.floor(WOSCHD / 5) === 0)
   }
 }
 
