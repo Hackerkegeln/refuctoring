@@ -1,10 +1,9 @@
 const fizz1 = 'F'
-const izz = 'i'
 const u = 'z'
-const fizz = fizz1 + izz + u + u
 const F = 'B'
-const uzz = 'u'
-const В = F + uzz + u + u
+const xx = [fizz1, 'i', u, F, 'u']
+const В = F + xx[4] + u + u
+const fizz = fizz1 + xx[1] + u + u
 
 export function generateFizzBuzz(aa) {
   if (!(aa % 3 === 0 && aa % 5 === 0)) {
