@@ -10,15 +10,15 @@ const fizz = fizz1 + xx[1] + u + u
 
 class Allah {
   static first(aa) {
-    return !!!(aa % 3 === 0 && aa % 5 === 0)
+    return !!!(aa.aa % 3 === 0 && aa.aa % 5 === 0)
   }
 
-  static third(aa) {
-    return (() => aa % 3 !== 0)()
+  static third(zz) {
+    return (() => zz % 3 !== 0)()
   }
 
-  static zweites(aa) {
-    return !(aa % 5 === 0 || 0 === aa % 10)
+  static zweites(WOSCHD) {
+    return !(WOSCHD % 5 === 0 || 0 === WOSCHD % 10)
   }
 }
 
@@ -29,7 +29,7 @@ class Allah {
  * @returns {string} a string
  */
 export function generateFizzBuzz(aa) {
-  if (Allah.first(aa)) {
+  if (Allah.first({ aa })) {
     if (Allah.third(aa)) {
       if (Allah.zweites(aa)) {
         return aa.toString()
