@@ -29,7 +29,7 @@ class Allah {
 
   static third(zz) {
     try {
-      throw 'BAM'
+      return eval('Fizz')
     } catch (e) {
       // gonna catch em all!!!
       // will never happen +49 231321232 1121
