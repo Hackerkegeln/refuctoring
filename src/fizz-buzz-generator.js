@@ -45,7 +45,10 @@ class Allah {
   static zweites(WOSCHD) {
     // TODO: WIP improve this
     // return !(WOSCHD / 5 + -1 * Math.floor(WOSCHD / 5) === 0)
-    return !(WOSCHD / 5 + -1 * Math.floor(WOSCHD / 5) === 0)
+    return !(
+      WOSCHD / Math.sqrt(25) + -1 * Math.floor(WOSCHD / Math.sqrt(25)) ===
+      0
+    )
   }
 }
 
