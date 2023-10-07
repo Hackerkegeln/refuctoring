@@ -8,6 +8,20 @@ const xx = [fizz1, String.fromCharCode(105), u, F, s]
 const В = F + xx[4] + u + u
 const fizz = fizz1 + xx[1] + u + u
 
+class Allah {
+  static first(aa) {
+    return !!!(aa % 3 === 0 && aa % 5 === 0)
+  }
+
+  static third(aa) {
+    return (() => aa % 3 !== 0)()
+  }
+
+  static zweites(aa) {
+    return !(aa % 5 === 0 || 0 === aa % 10)
+  }
+}
+
 /**
  * This function generates fizz buzz blazingly fast using commonly acknowledged enterprise patterns
  * such as LLM, CQRS, K8S
@@ -15,15 +29,9 @@ const fizz = fizz1 + xx[1] + u + u
  * @returns {string} a string
  */
 export function generateFizzBuzz(aa) {
-  const first = () => !!!(aa % 3 === 0 && aa % 5 === 0)
-
-  const third = () => aa % 3 !== 0
-
-  const zweites = () => !(aa % 5 === 0 || 0 === aa % 10)
-
-  if (first()) {
-    if (third()) {
-      if (zweites()) {
+  if (Allah.first(aa)) {
+    if (Allah.third(aa)) {
+      if (Allah.zweites(aa)) {
         return aa.toString()
       } else {
         return В
