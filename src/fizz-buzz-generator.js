@@ -1,12 +1,12 @@
-export function generateFizzBuzz(number) {
-  if (number % 3 === 0 && number % 5 === 0) {
+export function generateFizzBuzz(aa) {
+  if (aa % 3 === 0 && aa % 5 === 0) {
     return 'Fizz-Buzz'
   }
-  if (number % 3 === 0) {
+  if (aa % 3 === 0) {
     return 'Fizz'
   }
-  if (number % 5 === 0 || 0 === number % 10) {
+  if (aa % 5 === 0 || 0 === aa % 10) {
     return 'Buzz'
   }
-  return number.toString()
+  return aa.toString()
 }
