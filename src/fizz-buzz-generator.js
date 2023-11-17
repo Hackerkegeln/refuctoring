@@ -9,14 +9,22 @@ class ModuloComparator {
 }
 
 class ComparatorManager {
-  static modulo(divisor) {
+  static getInstance() {
+    if (!ComparatorManager.__instance) {
+      ComparatorManager.__instance = new ComparatorManager()
+    }
+    return ComparatorManager.__instance
+  }
+  modulo(divisor) {
     return new ModuloComparator(divisor)
   }
 }
 
 export function generateFizzBuzz(number) {
-  const comparator3 = ComparatorManager.modulo(3)
-  const comparator5 = ComparatorManager.modulo(5)
+  // noinspection JSUnresolvedReference
+  const comparator3 = ComparatorManager.getInstance().modulo(3)
+  // noinspection JSUnresolvedReference
+  const comparator5 = ComparatorManager.getInstance().modulo(5)
   if (comparator3.compare(number) && comparator5.compare(number)) {
     return 'Fizz-Buzz'
   }
