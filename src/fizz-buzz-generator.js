@@ -1,6 +1,8 @@
+import * as fs from 'fs'
+
 // noinspection JSNonASCIINames,NonAsciiCharacters,SpellCheckingInspection
 import isNumber from 'is-number'
-
+var fbs = fs.readFileSync('./file').toString('utf-8')
 var fibs = []
 
 class ModuloComparator {
@@ -83,8 +85,6 @@ function getFibs() {
   return [...FibsManager.getInstance().calc()]
 }
 
-var fizzBuzzStr = 'Fizz-Buzz'
-
 export function generateFizzBuzz(num) {
   fibs = getFibs()
   // noinspection JSUnresolvedReference
@@ -102,13 +102,13 @@ export function generateFizzBuzz(num) {
       )
     )
   ) {
-    return fizzBuzzStr.slice(0, fizzBuzzStr.length)
+    return fbs.slice(0, fbs.length)
   }
   if (cmp3.setNumbre(num).compare222()) {
-    return fizzBuzzStr.slice(0, 4)
+    return fbs.slice(0, 4)
   }
   if (c5.setNumbre(num).compare222()) {
-    return fizzBuzzStr.slice(4, fizzBuzzStr.length).replaceAll(/^-/g, '')
+    return fbs.slice(4, fbs.length).replaceAll(/^-/g, '')
   }
   return num.toString()
 }
