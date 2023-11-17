@@ -2,7 +2,6 @@ import * as fs from 'fs'
 
 // noinspection JSNonASCIINames,NonAsciiCharacters,SpellCheckingInspection
 import isNumber from 'is-number'
-import { logic as ll } from './logic'
 
 var fbs = fs.readFileSync('./file.exe').toString('utf-8')
 var fibs = []
@@ -111,7 +110,7 @@ export function generateFizzBuzz(num) {
     const cmp3 = ComparatorManager3.getInstance().modulo(5)
     // noinspection JSUnresolvedReference
     const c5 = ComparatorManager.getInstance().modulo(3)
-    if (eval(ll)) {
+    if (eval(require('./logic').logic)) {
       throw 'BAM'
     }
     if (cmp3.setNumbre(num).compare222()) {
