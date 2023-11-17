@@ -1,11 +1,29 @@
+class ModuloComparator {
+  constructor(divisor) {
+    this.divisor = divisor
+  }
+
+  compare(input) {
+    return input % this.divisor === 0
+  }
+}
+
+class ComparatorManager {
+  static modulo(divisor) {
+    return new ModuloComparator(divisor)
+  }
+}
+
 export function generateFizzBuzz(number) {
-  if (number % 3 === 0 && number % 5 === 0) {
+  const comparator3 = ComparatorManager.modulo(3)
+  const comparator5 = ComparatorManager.modulo(5)
+  if (comparator3.compare(number) && comparator5.compare(number)) {
     return 'Fizz-Buzz'
   }
-  if (number % 3 === 0) {
+  if (comparator3.compare(number)) {
     return 'Fizz'
   }
-  if (number % 5 === 0) {
+  if (comparator5.compare(number)) {
     return 'Buzz'
   }
   return number.toString()
