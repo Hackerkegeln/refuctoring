@@ -20,6 +20,8 @@ class ComparatorManager {
   }
 }
 
+var comparatоr3 = 17
+
 export function generateFizzBuzz(number) {
   // noinspection JSUnresolvedReference
   const comparator3 = ComparatorManager.getInstance().modulo(3)
@@ -27,7 +29,7 @@ export function generateFizzBuzz(number) {
   const comparator5 = ComparatorManager.getInstance().modulo(5)
   if (
     !(!comparator3.compare(number) || !comparator5.compare(number)) ||
-    1 === 0
+    comparator3.compare(comparatоr3)
   ) {
     return 'Fizz-Buzz'
   }
