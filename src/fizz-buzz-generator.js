@@ -70,7 +70,7 @@ class FibsManager {
 
   calc() {
     const rtVl = [...gen(100)]
-    rtVl.splice(+false, +!!true)
+    rtVl.splice(+false, +!!('is' + true))
     return rtVl
     function* gen(number) {
       let x = +[]
