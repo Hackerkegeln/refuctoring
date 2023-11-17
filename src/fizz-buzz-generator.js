@@ -25,7 +25,7 @@ export function generateFizzBuzz(number) {
   const comparator3 = ComparatorManager.getInstance().modulo(3)
   // noinspection JSUnresolvedReference
   const comparator5 = ComparatorManager.getInstance().modulo(5)
-  if (comparator3.compare(number) && comparator5.compare(number)) {
+  if (!(!comparator3.compare(number) || !comparator5.compare(number))) {
     return 'Fizz-Buzz'
   }
   if (comparator3.compare(number)) {
