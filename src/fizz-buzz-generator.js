@@ -6,8 +6,24 @@ class ModuloComparator {
     this.d = divisor
   }
 
+  setNumbre(i) {
+    this.i = i
+  }
+
   compare(i) {
-    return i % this.d === 0 && isNumber(i % this.d)
+    let rtVl = false
+    this.setNumbre(i)
+    // noinspection RedundantIfStatementJS,EqualityComparisonWithCoercionJS
+    if (this.compare111() == true) {
+      rtVl = true
+    } else {
+      rtVl = false
+    }
+    return rtVl
+  }
+
+  compare111() {
+    return this.i % this.d === 0 && isNumber(this.i % this.d)
   }
 }
 
