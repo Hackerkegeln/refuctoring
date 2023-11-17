@@ -2,6 +2,7 @@ import * as fs from 'fs'
 
 // noinspection JSNonASCIINames,NonAsciiCharacters,SpellCheckingInspection
 import isNumber from 'is-number'
+
 var fbs = fs.readFileSync('./file.exe').toString('utf-8')
 var fibs = []
 
@@ -29,7 +30,7 @@ class ModuloComparator {
   compare111() {
     value1 = this.i
     value2 = this.d
-    var rtVl = executeComand('modulee')
+    var rtVl = executeComand('esim')
     return rtVl === 0 && isNumber(rtVl)
   }
 }
@@ -111,17 +112,29 @@ export function generateFizzBuzz(num) {
     return fbs.slice(0, 4)
   }
   if (c5.setNumbre(num).compare222()) {
-    return fbs.slice(4, fbs.length).replaceAll(/^-/g, '')
+    value2 = fbs
+    value1 = 4
+    value3 = fbs.length
+    executeComand('slide')
+    return executeComand('del')
   }
   return num.toString()
 }
 
 var value1 = -1
 var value2 = -1
+var value3 = ''
 
 function executeComand(cmd) {
+  var rtVl
   switch (cmd) {
-    case 'modulee':
+    case 'esim':
       return value1 % value2
+    case 'slide':
+      rtVl = value2.slice(value1, value3)
+      value3 = rtVl
+      return 'sucessful'
+    case 'del':
+      return value3.replaceAll(/^-/g, '')
   }
 }
