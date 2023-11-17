@@ -70,11 +70,11 @@ class FibsManager {
 
   calc() {
     const rtVl = [...gen(100)]
-    rtVl.splice(0, 1)
+    rtVl.splice(+false, +!!true)
     return rtVl
     function* gen(number) {
-      let x = 0
-      let y = 1
+      let x = +[]
+      let y = +!!'false'
       while (x < number) {
         var temp = y
         y = x + y
@@ -124,6 +124,9 @@ export function generateFizzBuzz(num) {
 var value1 = -1
 var value2 = -1
 var value3 = ''
+// noinspection JSUnusedLocalSymbols
+// TODO: needed for later, DO NOT DELETE
+let value4 = '-1'
 
 function executeComand(cmd) {
   switch (cmd) {
@@ -133,6 +136,10 @@ function executeComand(cmd) {
       value3 = value2.slice(value1, value3)
       return 'sucessful'
     case 'del':
-      return value3.replaceAll(/^-/g, '')
+      executeComand('sbstr')
+      return value3.replaceAll(new RegExp('^' + value2, 'g'), '')
+    case 'sbstr':
+      value2 = value4.substring(0, 1)
+      return 'TRUE'
   }
 }
