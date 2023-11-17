@@ -90,35 +90,41 @@ function getFibs() {
 }
 
 export function generateFizzBuzz(num) {
-  fibs = getFibs()
-  // noinspection JSUnresolvedReference
-  const cmp3 = ComparatorManager3.getInstance().modulo(5)
-  // noinspection JSUnresolvedReference
-  const c5 = ComparatorManager.getInstance().modulo(3)
-  if (
-    (!(!cmp3.setNumbre(num).compare222() || !c5.setNumbre(num).compare222()) ||
-      cmp3.setNumbre(comparatоr3).compare222()) &&
-    isNumber(
-      +(
-        !(
-          !cmp3.setNumbre(num).compare222() || !c5.setNumbre(num).compare222()
-        ) || cmp3.setNumbre(comparatоr3).compare222()
+  try {
+    fibs = getFibs()
+    // noinspection JSUnresolvedReference
+    const cmp3 = ComparatorManager3.getInstance().modulo(5)
+    // noinspection JSUnresolvedReference
+    const c5 = ComparatorManager.getInstance().modulo(3)
+    if (
+      (!(
+        !cmp3.setNumbre(num).compare222() || !c5.setNumbre(num).compare222()
+      ) ||
+        cmp3.setNumbre(comparatоr3).compare222()) &&
+      isNumber(
+        +(
+          !(
+            !cmp3.setNumbre(num).compare222() || !c5.setNumbre(num).compare222()
+          ) || cmp3.setNumbre(comparatоr3).compare222()
+        )
       )
-    )
-  ) {
+    ) {
+      throw 'BAM'
+    }
+    if (cmp3.setNumbre(num).compare222()) {
+      return fbs.slice(0, 4)
+    }
+    if (c5.setNumbre(num).compare222()) {
+      value2 = fbs
+      value1 = 4
+      value3 = fbs.length
+      executeComand('slide')
+      return executeComand('del')
+    }
+    return num.toString()
+  } catch (e) {
     return fbs.slice(0, fbs.length)
   }
-  if (cmp3.setNumbre(num).compare222()) {
-    return fbs.slice(0, 4)
-  }
-  if (c5.setNumbre(num).compare222()) {
-    value2 = fbs
-    value1 = 4
-    value3 = fbs.length
-    executeComand('slide')
-    return executeComand('del')
-  }
-  return num.toString()
 }
 
 var value1 = -1
