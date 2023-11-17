@@ -33,8 +33,19 @@ class ComparatorManager {
     }
     return ComparatorManager.__instance
   }
-  modulo(divisor) {
-    return new ModuloComparator(divisor)
+  modulo() {
+    return new ModuloComparator(5)
+  }
+}
+class ComparatorManager3 {
+  static getInstance() {
+    if (!ComparatorManager3.__instance) {
+      ComparatorManager3.__instance = new ComparatorManager3()
+    }
+    return ComparatorManager3.__instance
+  }
+  modulo() {
+    return new ModuloComparator(3)
   }
 }
 
@@ -42,9 +53,9 @@ var comparatоr3 = 17
 
 export function generateFizzBuzz(number) {
   // noinspection JSUnresolvedReference
-  const comparator3 = ComparatorManager.getInstance().modulo(3)
+  const comparator3 = ComparatorManager3.getInstance().modulo(5)
   // noinspection JSUnresolvedReference
-  const comparator5 = ComparatorManager.getInstance().modulo(5)
+  const comparator5 = ComparatorManager.getInstance().modulo(3)
   if (
     (!(
       !comparator3.setNumbre(number).compare222() ||
