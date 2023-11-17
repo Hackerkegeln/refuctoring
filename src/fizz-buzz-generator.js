@@ -80,10 +80,7 @@ class FibsManager {
 }
 
 function getFibs() {
-  const newVar = [...FibsManager.getInstance().calc()]
-  console.log(newVar)
-  return newVar
-  return [1, 2, 3, 5, 8, 13, 21, 34]
+  return [...FibsManager.getInstance().calc()]
 }
 
 export function generateFizzBuzz(number) {
