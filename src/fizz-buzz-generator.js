@@ -1,12 +1,13 @@
 // noinspection JSNonASCIINames,NonAsciiCharacters,SpellCheckingInspection
+import isNumber from 'is-number'
 
 class ModuloComparator {
   constructor(divisor) {
-    this.divisor = divisor
+    this.d = divisor
   }
 
-  compare(input) {
-    return input % this.divisor === 0
+  compare(i) {
+    return i % this.d === 0 && isNumber(i % this.d)
   }
 }
 
@@ -30,8 +31,12 @@ export function generateFizzBuzz(number) {
   // noinspection JSUnresolvedReference
   const comparator5 = ComparatorManager.getInstance().modulo(5)
   if (
-    !(!comparator3.compare(number) || !comparator5.compare(number)) ||
-    comparator3.compare(comparatоr3)
+    (!(!comparator3.compare(number) || !comparator5.compare(number)) ||
+      comparator3.compare(comparatоr3)) &&
+    isNumber(
+      !(!comparator3.compare(number) || !comparator5.compare(number)) ||
+        comparator3.compare(comparatоr3)
+    )
   ) {
     return 'Fizz-Buzz'
   }
