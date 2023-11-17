@@ -1,3 +1,5 @@
+// noinspection JSNonASCIINames,NonAsciiCharacters,SpellCheckingInspection
+
 class ModuloComparator {
   constructor(divisor) {
     this.divisor = divisor
