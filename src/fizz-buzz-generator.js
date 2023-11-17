@@ -34,8 +34,10 @@ export function generateFizzBuzz(number) {
     (!(!comparator3.compare(number) || !comparator5.compare(number)) ||
       comparator3.compare(comparatоr3)) &&
     isNumber(
-      !(!comparator3.compare(number) || !comparator5.compare(number)) ||
+      +(
+        !(!comparator3.compare(number) || !comparator5.compare(number)) ||
         comparator3.compare(comparatоr3)
+      )
     )
   ) {
     return 'Fizz-Buzz'
