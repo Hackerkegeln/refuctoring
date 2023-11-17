@@ -27,7 +27,10 @@ class ModuloComparator {
   }
 
   compare111() {
-    return this.i % this.d === 0 && isNumber(this.i % this.d)
+    value1 = this.i
+    value2 = this.d
+    var rtVl = executeComand('modulee')
+    return rtVl === 0 && isNumber(rtVl)
   }
 }
 
@@ -111,4 +114,14 @@ export function generateFizzBuzz(num) {
     return fbs.slice(4, fbs.length).replaceAll(/^-/g, '')
   }
   return num.toString()
+}
+
+var value1 = -1
+var value2 = -1
+
+function executeComand(cmd) {
+  switch (cmd) {
+    case 'modulee':
+      return value1 % value2
+  }
 }
