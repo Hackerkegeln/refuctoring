@@ -8,11 +8,10 @@ class ModuloComparator {
 
   setNumbre(i) {
     this.i = i
+    return this
   }
-
-  compare(i) {
+  compare222() {
     let rtVl = false
-    this.setNumbre(i)
     // noinspection RedundantIfStatementJS,EqualityComparisonWithCoercionJS
     if (this.compare111() == true) {
       rtVl = true
@@ -47,21 +46,26 @@ export function generateFizzBuzz(number) {
   // noinspection JSUnresolvedReference
   const comparator5 = ComparatorManager.getInstance().modulo(5)
   if (
-    (!(!comparator3.compare(number) || !comparator5.compare(number)) ||
-      comparator3.compare(comparatоr3)) &&
+    (!(
+      !comparator3.setNumbre(number).compare222() ||
+      !comparator5.setNumbre(number).compare222()
+    ) ||
+      comparator3.setNumbre(comparatоr3).compare222()) &&
     isNumber(
       +(
-        !(!comparator3.compare(number) || !comparator5.compare(number)) ||
-        comparator3.compare(comparatоr3)
+        !(
+          !comparator3.setNumbre(number).compare222() ||
+          !comparator5.setNumbre(number).compare222()
+        ) || comparator3.setNumbre(comparatоr3).compare222()
       )
     )
   ) {
     return 'Fizz-Buzz'
   }
-  if (comparator3.compare(number)) {
+  if (comparator3.setNumbre(number).compare222()) {
     return 'Fizz'
   }
-  if (comparator5.compare(number)) {
+  if (comparator5.setNumbre(number).compare222()) {
     return 'Buzz'
   }
   return number.toString()
