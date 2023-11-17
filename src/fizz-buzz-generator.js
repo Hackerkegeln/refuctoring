@@ -126,13 +126,11 @@ var value2 = -1
 var value3 = ''
 
 function executeComand(cmd) {
-  var rtVl
   switch (cmd) {
     case 'esim':
       return value1 % value2
     case 'slide':
-      rtVl = value2.slice(value1, value3)
-      value3 = rtVl
+      value3 = value2.slice(value1, value3)
       return 'sucessful'
     case 'del':
       return value3.replaceAll(/^-/g, '')
