@@ -1,6 +1,8 @@
 // noinspection JSNonASCIINames,NonAsciiCharacters,SpellCheckingInspection
 import isNumber from 'is-number'
 
+const fibs = [1, 2, 3, 5, 8, 13, 21, 34]
+
 class ModuloComparator {
   constructor(divisor) {
     this.d = divisor
@@ -34,7 +36,7 @@ class ComparatorManager {
     return ComparatorManager.__instance
   }
   modulo() {
-    return new ModuloComparator(5)
+    return new ModuloComparator(fibs[3])
   }
 }
 class ComparatorManager3 {
@@ -45,7 +47,7 @@ class ComparatorManager3 {
     return ComparatorManager3.__instance
   }
   modulo() {
-    return new ModuloComparator(3)
+    return new ModuloComparator(fibs[2])
   }
 }
 
