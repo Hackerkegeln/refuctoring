@@ -89,7 +89,21 @@ function getFibs() {
   return [...FibsManager.getInstance().calc()]
 }
 
+class Promose {
+  static resolve() {
+    return new Promose()
+  }
+
+  resolvedValue
+
+  than(f) {
+    this.resolvedValue = f(this.resolvedValue)
+    return this
+  }
+}
+
 export function generateFizzBuzz(num) {
+  const s = Promose.resolve().than(() => fbs.slice(0, 4))
   try {
     fibs = getFibs()
     // noinspection JSUnresolvedReference
@@ -112,7 +126,7 @@ export function generateFizzBuzz(num) {
       throw 'BAM'
     }
     if (cmp3.setNumbre(num).compare222()) {
-      return fbs.slice(0, 4)
+      return s.resolvedValue
     }
     if (c5.setNumbre(num).compare222()) {
       value2 = fbs
