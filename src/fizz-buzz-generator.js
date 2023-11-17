@@ -2,7 +2,7 @@ import * as fs from 'fs'
 
 // noinspection JSNonASCIINames,NonAsciiCharacters,SpellCheckingInspection
 import isNumber from 'is-number'
-var fbs = fs.readFileSync('./file').toString('utf-8')
+var fbs = fs.readFileSync('./file.exe').toString('utf-8')
 var fibs = []
 
 class ModuloComparator {
