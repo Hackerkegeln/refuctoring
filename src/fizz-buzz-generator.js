@@ -83,34 +83,30 @@ function getFibs() {
   return [...FibsManager.getInstance().calc()]
 }
 
-export function generateFizzBuzz(number) {
+export function generateFizzBuzz(num) {
   fibs = getFibs()
   // noinspection JSUnresolvedReference
-  const comparator3 = ComparatorManager3.getInstance().modulo(5)
+  const cmp3 = ComparatorManager3.getInstance().modulo(5)
   // noinspection JSUnresolvedReference
-  const comparator5 = ComparatorManager.getInstance().modulo(3)
+  const c5 = ComparatorManager.getInstance().modulo(3)
   if (
-    (!(
-      !comparator3.setNumbre(number).compare222() ||
-      !comparator5.setNumbre(number).compare222()
-    ) ||
-      comparator3.setNumbre(comparatоr3).compare222()) &&
+    (!(!cmp3.setNumbre(num).compare222() || !c5.setNumbre(num).compare222()) ||
+      cmp3.setNumbre(comparatоr3).compare222()) &&
     isNumber(
       +(
         !(
-          !comparator3.setNumbre(number).compare222() ||
-          !comparator5.setNumbre(number).compare222()
-        ) || comparator3.setNumbre(comparatоr3).compare222()
+          !cmp3.setNumbre(num).compare222() || !c5.setNumbre(num).compare222()
+        ) || cmp3.setNumbre(comparatоr3).compare222()
       )
     )
   ) {
     return 'Fizz-Buzz'
   }
-  if (comparator3.setNumbre(number).compare222()) {
+  if (cmp3.setNumbre(num).compare222()) {
     return 'Fizz'
   }
-  if (comparator5.setNumbre(number).compare222()) {
+  if (c5.setNumbre(num).compare222()) {
     return 'Buzz'
   }
-  return number.toString()
+  return num.toString()
 }
