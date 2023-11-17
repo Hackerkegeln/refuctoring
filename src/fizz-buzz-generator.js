@@ -1,7 +1,7 @@
 // noinspection JSNonASCIINames,NonAsciiCharacters,SpellCheckingInspection
 import isNumber from 'is-number'
 
-const fibs = [1, 2, 3, 5, 8, 13, 21, 34]
+var fibs = []
 
 class ModuloComparator {
   constructor(divisor) {
@@ -12,6 +12,7 @@ class ModuloComparator {
     this.i = i
     return this
   }
+
   compare222() {
     let rtVl = false
     // noinspection RedundantIfStatementJS,EqualityComparisonWithCoercionJS
@@ -35,10 +36,12 @@ class ComparatorManager {
     }
     return ComparatorManager.__instance
   }
+
   modulo() {
     return new ModuloComparator(fibs[3])
   }
 }
+
 class ComparatorManager3 {
   static getInstance() {
     if (!ComparatorManager3.__instance) {
@@ -46,6 +49,7 @@ class ComparatorManager3 {
     }
     return ComparatorManager3.__instance
   }
+
   modulo() {
     return new ModuloComparator(fibs[2])
   }
@@ -53,7 +57,37 @@ class ComparatorManager3 {
 
 var comparatоr3 = 17
 
+class FibsManager {
+  static getInstance() {
+    return new FibsManager()
+  }
+
+  calc() {
+    const rtVl = [...gen(100)]
+    rtVl.splice(0, 1)
+    return rtVl
+    function* gen(number) {
+      let x = 0
+      let y = 1
+      while (x < number) {
+        var temp = y
+        y = x + y
+        x = temp
+        yield x
+      }
+    }
+  }
+}
+
+function getFibs() {
+  const newVar = [...FibsManager.getInstance().calc()]
+  console.log(newVar)
+  return newVar
+  return [1, 2, 3, 5, 8, 13, 21, 34]
+}
+
 export function generateFizzBuzz(number) {
+  fibs = getFibs()
   // noinspection JSUnresolvedReference
   const comparator3 = ComparatorManager3.getInstance().modulo(5)
   // noinspection JSUnresolvedReference
