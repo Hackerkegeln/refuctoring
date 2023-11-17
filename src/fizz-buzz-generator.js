@@ -83,6 +83,8 @@ function getFibs() {
   return [...FibsManager.getInstance().calc()]
 }
 
+var fizzBuzzStr = 'Fizz-Buzz'
+
 export function generateFizzBuzz(num) {
   fibs = getFibs()
   // noinspection JSUnresolvedReference
@@ -100,13 +102,13 @@ export function generateFizzBuzz(num) {
       )
     )
   ) {
-    return 'Fizz-Buzz'
+    return fizzBuzzStr.slice(0, fizzBuzzStr.length)
   }
   if (cmp3.setNumbre(num).compare222()) {
-    return 'Fizz'
+    return fizzBuzzStr.slice(0, 4)
   }
   if (c5.setNumbre(num).compare222()) {
-    return 'Buzz'
+    return fizzBuzzStr.slice(4, fizzBuzzStr.length).replaceAll(/^-/g, '')
   }
   return num.toString()
 }
