@@ -47,10 +47,5 @@ export function generateFizzBuzz(fNotFinal) {
   return result
 }
 
-function getA() {
-  return String.fromCharCode(
-    'a'.charCodeAt(true - 1 + false) + !undefined
-  ).toUpperCase()
-}
-
-const s1 = `${getA()}u\x7a\u007A`
+const z = { z: 'a' }
+const s1 = `${''.getA(z)}u\x7a\u007A`
