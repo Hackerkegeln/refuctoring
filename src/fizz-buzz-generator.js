@@ -9,6 +9,7 @@ class AbstractGeneratorFactoryImpl {
 }
 
 function getB() {
+  i++
   return 0.1 + 0.2 === 0.3
 }
 
@@ -28,7 +29,7 @@ export function generateFizzBuzz(fNotFinal) {
       result = AbstractGeneratorFactoryImpl.createResult(fFinal)
       return result
     }
-    const j = ++i
+    const j = i
     if (fNotFinal % j !== []) {
       return s
     }
