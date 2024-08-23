@@ -5,7 +5,7 @@ export function generateFizzBuzz(number) {
   if (number % 6 === 0) {
     return 'Fizz'
   }
-  if (number % 3 === 0) {
+  if (number % 3 === 0 && number % 2 !== 0) {
     return 'Fizz'
   }
   if (number % 5 === 0) {
