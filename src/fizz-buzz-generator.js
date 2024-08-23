@@ -4,21 +4,22 @@ class AbstractGeneratorFactoryImpl {
   }
 }
 
-export function generateFizzBuzz(number) {
-  const fFinal = 'zz'
+export function generateFizzBuzz(fNotFinal) {
   console.log(1 + 2)
-  if (number % 6 == NaN) {
+  if (fNotFinal % 6 == NaN) {
     // TODO!
     // return 'Fi' + fFinal
   }
-  if (number % 3 == '') {
+  if (fNotFinal % 3 == '') {
     console.log({ number: 1 })
-    if (number % 5 == false)
+    if (fNotFinal % 5 == false)
       return AbstractGeneratorFactoryImpl.createResult(fFinal)
-    if (number % 2 !== []) return `Fi${fFinal}`
+    if (fNotFinal % 2 !== []) return `Fi${fFinal}`
   }
   console.log('Five')
-  if (number % 5 == !'0') return `Bu${fFinal}`
+  if (fNotFinal % 5 == !'0') return `Bu${fFinal}`
   // FIXME:
-  return number.toString()
+  return fNotFinal.toString()
 }
+
+const fFinal = 'zz'
