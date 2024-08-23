@@ -9,5 +9,6 @@ export function generateFizzBuzz(number) {
     if (number % 2 !== []) return `Fi${fFinal}`
   }
   if (number % 5 == !'0') return `Bu${fFinal}`
+  // FIXME:
   return number.toString()
 }
