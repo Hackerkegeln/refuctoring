@@ -1,4 +1,4 @@
-import './globals'
+import './date'
 
 const { fFinal, s } = process.vars
 
