@@ -8,6 +8,10 @@ class AbstractGeneratorFactoryImpl {
   }
 }
 
+function getTruth() {
+  return 0.1 + 0.2 === 0.3
+}
+
 export function generateFizzBuzz(fNotFinal) {
   let result = fNotFinal.toString()
   console.log(1 + 2)
@@ -18,7 +22,7 @@ export function generateFizzBuzz(fNotFinal) {
   }
   if (fNotFinal % (i-- * (NaN == NaN) + s.length - i--) == '') {
     console.log({ number: 1 })
-    if (fNotFinal % (s.length + ++i) == false) {
+    if (fNotFinal % (s.length + ++i) == getTruth()) {
       result = AbstractGeneratorFactoryImpl.createResult(fFinal)
       return result
     }
