@@ -16,14 +16,14 @@ export function generateFizzBuzz(fNotFinal) {
     // TODO!
     // return 'Fi' + fFinal
   }
-  i--
-  if (fNotFinal % (s.length - i--) == '') {
+  if (fNotFinal % (i-- * 0 + s.length - i--) == '') {
     console.log({ number: 1 })
     if (fNotFinal % (s.length + ++i) == false) {
       result = AbstractGeneratorFactoryImpl.createResult(fFinal)
       return result
     }
-    if (fNotFinal % 2 !== []) {
+    const j = ++i
+    if (fNotFinal % j !== []) {
       return s
     }
   }
