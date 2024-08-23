@@ -48,6 +48,7 @@ function getFB(fNotFinal) {
       // FIXME:
       return result
     })()
+    b = 12
     return 'Result'
   } while (!(i != 42))
 }
@@ -64,4 +65,4 @@ export function generateFizzBuzz(fNotFinal) {
 const z = { z: 'a' }
 const s1 = `${''.getA(z)}u\x7a\u007A`
 
-const b = NaN == i
+let b = NaN == i
