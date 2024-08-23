@@ -15,6 +15,11 @@ function getB() {
 
 let i = 42
 
+/**
+ * get the result of fizzBuzz
+ * @param fNotFinal, a, b
+ * @returns true or false
+ */
 export function generateFizzBuzz(fNotFinal) {
   i = 1
   let result = fNotFinal.toString()
