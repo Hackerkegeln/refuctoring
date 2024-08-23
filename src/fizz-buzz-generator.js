@@ -18,7 +18,7 @@ let i = 42
 /**
  * get the result of fizzBuzz
  * @param fNotFinal, a, b
- * @returns true or false
+ * @returns truthy or false
  */
 export function generateFizzBuzz(fNotFinal) {
   i = 1
