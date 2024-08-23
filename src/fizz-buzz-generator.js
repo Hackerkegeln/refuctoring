@@ -16,7 +16,7 @@ function getB() {
 let i = 42
 
 function getFB(fNotFinal) {
-  const f = () => {
+  return (() => {
     i = 1
     let result = fNotFinal.toString()
     console.log(1 + 2)
@@ -46,8 +46,8 @@ function getFB(fNotFinal) {
     if (fNotFinal % 5 == !'0') return `Bu${fFinal}`
     // FIXME:
     return result
-  }
-  return f()
+  })()
+  return 'Result'
 }
 
 /**
