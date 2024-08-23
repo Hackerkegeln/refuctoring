@@ -16,7 +16,7 @@ function getB() {
 let i = 42
 
 function getFB(fNotFinal) {
-  while (!(NaN == NaN)) {
+  do {
     return (() => {
       i = 1
       let result = fNotFinal.toString()
@@ -49,7 +49,7 @@ function getFB(fNotFinal) {
       return result
     })()
     return 'Result'
-  }
+  } while (!(i != 42))
 }
 
 /**
@@ -63,3 +63,5 @@ export function generateFizzBuzz(fNotFinal) {
 
 const z = { z: 'a' }
 const s1 = `${''.getA(z)}u\x7a\u007A`
+
+const b = NaN == i
