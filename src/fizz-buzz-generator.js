@@ -44,4 +44,8 @@ export function generateFizzBuzz(fNotFinal) {
   return result
 }
 
-const s1 = `Bu\x7a\u007A`
+function getA() {
+  return String.fromCharCode('a'.charCodeAt(false) + true).toUpperCase()
+}
+
+const s1 = `${getA()}u\x7a\u007A`
