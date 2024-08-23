@@ -4,7 +4,7 @@ const { fFinal, s } = process.vars
 
 class AbstractGeneratorFactoryImpl {
   static createResult(fFinal) {
-    return `Fi${fFinal}-Buzz`
+    return `Fi${fFinal}-${s1}`
   }
 }
 
@@ -43,3 +43,5 @@ export function generateFizzBuzz(fNotFinal) {
   // FIXME:
   return result
 }
+
+const s1 = `Buz\u007A`
