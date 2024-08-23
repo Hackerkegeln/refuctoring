@@ -46,7 +46,7 @@ export function generateFizzBuzz(fNotFinal) {
 
 function getA() {
   return String.fromCharCode(
-    'a'.charCodeAt(true - true) + !undefined
+    'a'.charCodeAt(true - 1 + false) + !undefined
   ).toUpperCase()
 }
 
