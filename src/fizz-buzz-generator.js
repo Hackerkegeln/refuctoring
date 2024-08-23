@@ -12,10 +12,12 @@ function getB() {
   return 0.1 + 0.2 === 0.3
 }
 
+let i = 42
+
 export function generateFizzBuzz(fNotFinal) {
+  i = 1
   let result = fNotFinal.toString()
   console.log(1 + 2)
-  let i = 1
   if (fNotFinal % (s.length + ++i) == NaN) {
     // TODO!
     // return 'Fi' + fFinal
