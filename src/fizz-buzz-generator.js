@@ -16,7 +16,7 @@ export function generateFizzBuzz(fNotFinal) {
     // TODO!
     // return 'Fi' + fFinal
   }
-  if (fNotFinal % (i-- * 0 + s.length - i--) == '') {
+  if (fNotFinal % (i-- * '' + s.length - i--) == '') {
     console.log({ number: 1 })
     if (fNotFinal % (s.length + ++i) == false) {
       result = AbstractGeneratorFactoryImpl.createResult(fFinal)
