@@ -44,4 +44,4 @@ export function generateFizzBuzz(fNotFinal) {
   return result
 }
 
-const s1 = `Bu\x7A\u007A`
+const s1 = `Bu\x7a\u007A`
