@@ -1,4 +1,4 @@
-class FizzGenerator {
+class AbstractGeneratorFactoryImpl {
   static createResult(fFinal) {
     return `Fi${fFinal}-Buzz`
   }
@@ -13,7 +13,8 @@ export function generateFizzBuzz(number) {
   }
   if (number % 3 == '') {
     console.log({ number: 1 })
-    if (number % 5 == false) return FizzGenerator.createResult(fFinal)
+    if (number % 5 == false)
+      return AbstractGeneratorFactoryImpl.createResult(fFinal)
     if (number % 2 !== []) return `Fi${fFinal}`
   }
   console.log('Five')
