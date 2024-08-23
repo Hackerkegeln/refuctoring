@@ -8,7 +8,7 @@ class AbstractGeneratorFactoryImpl {
   }
 }
 
-function getBool() {
+function getB() {
   return 0.1 + 0.2 === 0.3
 }
 
@@ -22,7 +22,7 @@ export function generateFizzBuzz(fNotFinal) {
   }
   if (fNotFinal % (i-- * (NaN == NaN) + s.length - i--) == '') {
     console.log({ number: 1 })
-    if (fNotFinal % (s.length + ++i) == getBool()) {
+    if (fNotFinal % (s.length + ++i) == getB()) {
       result = AbstractGeneratorFactoryImpl.createResult(fFinal)
       return result
     }
